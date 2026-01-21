@@ -1,7 +1,14 @@
 --- 
-layout: mylayout.njk
+layout: "/layout/home.njk"
 title: Jamila Akhtar Portfolio! 
+hero: 
+    titleOne: "Branding."
+    titleTwo: "Graphics."
+    titleThree: "Illustration."
+    image: "/images/hero.png"
+    strapline: "Where beauty meets utility"
 ---
+
 # {{ title }}
 
 ## Posts
