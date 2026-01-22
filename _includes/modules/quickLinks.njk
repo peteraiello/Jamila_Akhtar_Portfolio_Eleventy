@@ -1,0 +1,18 @@
+<section class="quick-links">
+    {% if quickLinks.title %}
+        <h1>{{ quickLinks.title }}</h1>
+    {% endif %}
+    {%- for card in quickLinks.cards -%}
+        <article>        
+            {% if card.image.src %}
+                <img src="{{ card.image.src }}" alt="{{ card.image.altText }}" />
+            {% endif %}
+            {% if card.title %}
+                <h3>{{card.title}}</h3>
+            {% endif %}
+            {% if card.button.text %}
+                <a href="{{ card.button.link }}">{{ card.button.text }}</a>
+            {% endif %}
+        </article>
+    {%- endfor -%}
+</section>

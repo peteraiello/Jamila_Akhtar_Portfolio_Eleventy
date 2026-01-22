@@ -1,0 +1,13 @@
+<section class="hero">
+    {% if hero.title %}
+        <h1>{{ hero.title }}</h1>
+    {% endif %}
+
+    {% if hero.image.src %}
+        <img src="{{ hero.image.src }}" alt="{{ hero.image.altText }}" />
+    {% endif %}
+
+    {% if hero.strapline %}
+        <p>{{ hero.strapline }}</p>
+    {% endif %}
+</section>

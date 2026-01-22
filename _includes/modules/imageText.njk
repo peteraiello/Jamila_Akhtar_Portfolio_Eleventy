@@ -1,0 +1,17 @@
+<section class="image-text">
+    {% if imageText.title %}
+        <h1>{{ imageText.title }}</h1>
+    {% endif %}
+
+    {% if imageText.blurb %}
+        <p>{{ imageText.blurb }}</p>
+    {% endif %}
+
+    {% if imageText.button.link %}
+        <a href="{{ imageText.button.link }}">{{ imageText.button.text }}</a>
+    {% endif %}
+
+    {% if imageText.image.src %}
+        <img src="{{ imageText.image.src }}" alt="{{ imageText.image.altText }}" />
+    {% endif %}
+</section>
