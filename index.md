@@ -13,7 +13,7 @@ header:
 hero: 
     title: "Design Studio"
     image: 
-        src: "/images/hero.png"
+        src: "/images/hero/creative-juice.png"
         altText: "Illustration of a cat next to a vase"
     strapline: "Branding | Graphics | Illustration"
 imageText: 
@@ -57,7 +57,7 @@ quickLinks:
             {title: "post two"}]
 footer: 
     footerLogo: 
-        src: "images/Footer_logo.svg"
+        src: "/images/Footer_logo.svg"
         altText: "Footer Logo"
     copyright: "Jamila Y Akhtar 2025 All Rights Reserved"
     footerLinks: [

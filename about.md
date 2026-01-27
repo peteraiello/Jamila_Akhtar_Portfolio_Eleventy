@@ -13,9 +13,8 @@ header:
 hero: 
     title: "About"
     image: 
-        src: "/images/hero.png"
+        src: "/images/hero/flower_pot.png"
         altText: "Illustration of a cat next to a vase"
-    strapline: "Branding | Graphics | Illustration"
 imageText: 
     image: 
         src: "/images/jamila.jpg"
@@ -57,7 +56,7 @@ quickLinks:
             {title: "post two"}]
 footer: 
     footerLogo: 
-        src: "images/Footer_logo.svg"
+        src: "/images/Footer_logo.svg"
         altText: "Footer Logo"
     copyright: "Jamila Y Akhtar 2025 All Rights Reserved"
     footerLinks: [

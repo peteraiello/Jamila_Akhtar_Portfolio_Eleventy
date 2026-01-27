@@ -1,0 +1,21 @@
+{% include "../head.njk" %}
+
+{% include "../header.njk" %}
+
+{% if title %}
+    <h1>{{title}}</h1>
+{% endif %}
+
+{{ title }}
+
+<p>
+    <span>
+        Date: {{ date }}
+    </span>
+    <br />
+    <span>
+        End date: {{ endDate }}
+    </span>
+</p>
+
+{% include "../footer.njk" %}

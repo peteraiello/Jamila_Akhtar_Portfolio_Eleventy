@@ -1,20 +1,27 @@
---- 
-layout: "/layout/experience.njk"
+---
+layout: "/layout/project.njk"
+permalink: "/portfolio/darjeeling/"
+title: "Those Darjeeling Days"
+tags: project
+img: 
+    src: "/images/projects/darjeeling.png"
+    altText: "Branding for darjeeling days"
+excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
+date: 2025-01-15
+endDate: 2025-03-15
+button: 
+    text: "Click Here"
+    link: "/portfolio/darjeeling"
 header: 
     logo: 
         src: "/images/logo.svg"
         altText: "header logo"
     nav: [
-        {label: "Portfolio", link: "/portfolio"},
+        {label: "Portfolio", link: "/portfolio", isActive: true},
         {label: "Experience", link: "/experience"},
         {label: "About", link: "/about"},
-        {label: "Contact", link: "/contact", isActive: true}
+        {label: "Contact", link: "/contact"}
     ]
-hero: 
-    title: "Contact Me"
-    image: 
-        src: "/images/hero/creative_power.png"
-        altText: "Illustration of a cat next to a vase"
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"
@@ -32,6 +39,3 @@ footer:
         {label: "linkedin", link: "#"}
     ]
 ---
-
-
-

@@ -1,9 +1,31 @@
 <section>
     <h3>Portfolio</h3>
-    <ul>
-        {%- for project in collections.project -%}
-            {% set cardTitle = project.title %}
-            {% include "../components/card.njk" %}
-        {%- endfor -%}
-    </ul>
+    <div class="container grid">        
+        <div class="projects">
+            <div class="projects-filters">
+                {%- for button in projectsWrapper.filterButtons %}
+                    <button href="{{button.id}}">{{button.label}}</button>
+                {%- endfor -%}
+            </div>
+            <div class="projects-wrapper">
+                {%- for project in collections.projects -%}
+                    {% set cardImage = project.data.img.src %}
+                    {% set cardImageAlt = project.data.img.altText %}
+                    {% set cardTitle = project.data.title %}
+                    {% set cardExcerpt = project.data.excerpt %}      
+                    {% set cardLink = project.data.button.link %}
+                    {% include "../components/card.njk" %}
+                {%- endfor -%}    
+            </div>
+        </div>
+    </div>
+    <!-- Pagination  -->
+    <div class="pagination">
+        <button>Previous</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>Next</button> 
+    </div>
+    <!-- / Pagination end -->
 </section> 
