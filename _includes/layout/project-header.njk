@@ -1,0 +1,25 @@
+<div class="article-header">
+
+    <h1>{{ title }}</h1>
+    
+    <p>{{location}}</p>    
+    <p>
+        <span>
+            Date: {{ startDate }}
+        </span>
+        <br />
+        <span>
+            End date: {{ endDate }}
+        </span>
+    </p>
+    
+    {% if headerImage.src %}
+        <img src="{{headerImage.src}}" alt="{{headerImage.altText}}" />
+    {% endif %}
+
+    {% if brandSwatches %}
+        {%- for swatch in brandSwatches -%}
+            <span style="background-color: {{swatch}}">{{ swatch }}</span>
+        {%- endfor -%}
+    {% endif %}
+</div>

@@ -1,5 +1,5 @@
 --- 
-layout: "/layout/experience.njk"
+layout: "/layout/contact.njk"
 header: 
     logo: 
         src: "/images/logo.svg"

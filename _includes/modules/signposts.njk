@@ -1,0 +1,14 @@
+<section class="signposts">
+    <div class="container">
+        {%- for signpost in signposts -%}
+            <article class="signpost">
+                {% if(signpost.img.src) %}
+                    <img src="{{ signpost.img.src}}" alt="{{signpost.img.alt}}" />
+                {% endif %}
+                {% if(signpost.title) %}
+                    <p>{{signpost.title}}</p>
+                {% endif %}
+            </article>
+        {%- endfor -%}
+    </div>
+</section>

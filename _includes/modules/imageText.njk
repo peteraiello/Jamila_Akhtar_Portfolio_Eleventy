@@ -11,4 +11,9 @@
     {% if imageTextButton.link %}
         <a href="{{ imageTextButton.link }}">{{ imageTextButton.text }}</a>
     {% endif %}
+    {%- for button in imageTextButtons -%}
+        <a href="{{button.link}}">
+            {{button.text}}
+        </a>
+    {% endfor %}
 </section>

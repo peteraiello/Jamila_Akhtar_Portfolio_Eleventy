@@ -2,29 +2,31 @@
 
 {% include "../header.njk" %}
 
-{% if title %}
-    <h1>{{title}}</h1>
-{% endif %}
-
-{{ title }}
-
-<p>
-    <span>
-        Date: {{ date }}
-    </span>
-    <br />
-    <span>
-        End date: {{ endDate }}
-    </span>
-</p>
+{% include "../layout/project-header.njk" %} 
 
 {%- for layout in flexibleLayout -%}
     {% if layout.name === "image-text" %}
         {% set imageTextTitle = layout.title %}
         {% set imageTextBlurb = layout.text %}
         {% set imageTextImage = layout.image %}
-        {% include "../modules/imageText.njk" %}
+        {% include "../modules/imageText.njk" %} 
+    {% endif %}
+    {% if layout.name === "full-width-image" %}
+        {% set fullImage = layout.fullImage %}
+        {% include "../modules/fullImage.njk" %}
+    {% endif %} 
+    {% if layout.name === "text-block" %}
+        {% set title = layout.title %}
+        {% set content = layout.content %}
+        {% set gallery = layout.gallery %}
+        {% include "../modules/textBlock.njk" %}
+    {% endif %}
+    {% if layout.name === "signposts" %}
+        {% set signposts = layout.signposts %}
+        {% include "../modules/signposts.njk" %}
     {% endif %}
 {%- endfor -%}
+
+<a href="/portfolio">Return to Portfolio</a>
 
 {% include "../footer.njk" %}
