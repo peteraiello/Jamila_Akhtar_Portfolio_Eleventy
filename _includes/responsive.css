@@ -1,0 +1,13 @@
+
+/* Breakpoint prefix Minimum width CSS
+*/
+/* Small */
+@media (width >= 40rem) { }
+/* Medium */
+@media (width >= 48rem) { }
+/* Large */
+@media (width >= 64rem) { }
+/* X-Large */
+@media (width >= 80rem) { }
+/* 2X-Large */
+@media (width >= 96rem) { }

@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--primary-color);
 }
 
 .nav-wrapper nav {
@@ -28,13 +27,11 @@
 
 .nav-wrapper nav ul li a.is-active {
     font-weight: 600;
-    /* text-decoration: underline; */
 }
 
 .container-outer {
     background-color: var(--primary-color);
 }
-
 
 footer {
     background-color: var(--primary-color);
