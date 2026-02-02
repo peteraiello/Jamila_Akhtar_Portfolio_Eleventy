@@ -9,11 +9,11 @@
             </div>
             <div class="projects-wrapper">
                 {%- for project in collections.projects -%}
-                    {% set cardImage = project.data.img.src %}
-                    {% set cardImageAlt = project.data.img.altText %}
+                    {% set cardImage = project.data.thumbnail.src %}
+                    {% set cardImageAlt = project.data.thumbnail.altText %}
                     {% set cardTitle = project.data.title %}
                     {% set cardExcerpt = project.data.excerpt %}      
-                    {% set cardLink = project.data.button.link %}
+                    {% set cardLink = project.data.permalink %}
                     {% include "../components/card.njk" %}
                 {%- endfor -%}    
             </div>

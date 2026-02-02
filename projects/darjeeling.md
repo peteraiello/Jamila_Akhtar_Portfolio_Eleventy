@@ -6,6 +6,9 @@ tags: project
 excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
 startDate: 2025-01-15
 endDate: 2025-03-15
+thumbnail: 
+    src: "/images/projects/darjeeling.png"
+    altText: "Darjeeling days"
 headerImage: 
     src: "/images/projects/darjeeling/dd-header.jpg"
     altText: "Branding for darjeeling days"
@@ -134,9 +137,7 @@ flexibleLayout: [
         }
     },
 ]
-button: 
-    text: "Click Here"
-    link: "/portfolio/darjeeling"
+
 header: 
     logo: 
         src: "/images/logo.svg"

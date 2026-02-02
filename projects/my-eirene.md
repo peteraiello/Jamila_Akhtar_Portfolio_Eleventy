@@ -6,6 +6,9 @@ tags: project
 excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
 startDate: 2025-01-15
 endDate: 2025-03-15
+thumbnail:
+    src: "/images/projects/my_eirene.png"
+    altText: "My Eirene thumbnail"
 headerImage: 
     src: "/images/projects/my_eirene/my-eirene.png"
     altText: "Branding for darjeeling days"
@@ -117,9 +120,6 @@ flexibleLayout: [
         }
     },
 ]
-button: 
-    text: "Click Here"
-    link: "/portfolio/my-eirene"
 header: 
     logo: 
         src: "/images/logo.svg"
