@@ -9,7 +9,8 @@ export default function(eleventyConfig) {
     };
 
     eleventyConfig.addPassthroughCopy("bundle.css");
-    eleventyConfig.addPassthroughCopy("/images/favicon");
+    eleventyConfig.addPassthroughCopy("images/favicon");
+    eleventyConfig.addPassthroughCopy("images/*.svg");
     eleventyConfig.addPlugin(eleventyImageTransformPlugin);
     
     // Create a projects collection from the projects folder
