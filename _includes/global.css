@@ -4,15 +4,58 @@ body {
     padding: 0;
 }
 
+
+/* Small
+@media (width >= 40rem) { }
+@media (width >= 48rem) { }
+@media (width >= 64rem) { }
+@media (width >= 80rem) { }
+@media (width >= 96rem) { }
+*/
+
 :root {
     --primary-color: #A1CCFF;
     --secondary-color: #196638;
     --tertiary-color: #FB93D0;
+    --small: 40rem;
+    --medium: 48rem;
+    --large: 64rem;
+    --xlarge: 80rem;
+    --xxlarge: 96rem;
     font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4, 
+h5, 
+h6 {
+    font-family: "rl-aqva", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+ul,
+li,
+p {
+    font-family: "marine-up", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
     margin: 0 auto;
     width: 100%;
+    padding: 0 20px;
     max-width: 1200px;
 }
+
+.container-xl {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1440px;
+}
+
+
+

@@ -1,20 +1,46 @@
+header {
+    background-color: var(--primary-color);
+}
+
 .nav-wrapper {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (width >= 80rem) { 
+    .nav-wrapper {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+}
+
+@media (width >= 96rem) { 
+    .nav-wrapper {
+        padding-top: 49px;
+        padding-bottom: 49px;
+    }
 }
 
 .nav-wrapper nav {
-    display: flex;
-    align-items: center;
+    display: none;
+}
+
+@media (width >= 64rem) {
+    .nav-wrapper nav {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .nav-wrapper nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 1rem;
+    gap: calc(22 / 16 * 1rem);
     flex-direction: row;
     list-style: none;
 }
@@ -32,6 +58,21 @@
 .container-outer {
     background-color: var(--primary-color);
 }
+
+.mobile-menu-button {
+    cursor: pointer;
+    display: block;
+    border: 0;
+    background: transparent;
+    width: 50px;
+}
+
+@media (width >= 64rem) { 
+    .mobile-menu-button {
+        display: none;
+    }
+}
+
 
 footer {
     background-color: var(--primary-color);
@@ -111,18 +152,62 @@ body {
     padding: 0;
 }
 
+
+/* Small
+@media (width >= 40rem) { }
+@media (width >= 48rem) { }
+@media (width >= 64rem) { }
+@media (width >= 80rem) { }
+@media (width >= 96rem) { }
+*/
+
 :root {
     --primary-color: #A1CCFF;
     --secondary-color: #196638;
     --tertiary-color: #FB93D0;
+    --small: 40rem;
+    --medium: 48rem;
+    --large: 64rem;
+    --xlarge: 80rem;
+    --xxlarge: 96rem;
     font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4, 
+h5, 
+h6 {
+    font-family: "rl-aqva", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+ul,
+li,
+p {
+    font-family: "marine-up", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
     margin: 0 auto;
     width: 100%;
+    padding: 0 20px;
     max-width: 1200px;
 }
+
+.container-xl {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1440px;
+}
+
+
+
+
 .grid {
     grid-template-columns: repeat(12, minmax(0, 1fr));
     display: grid;
