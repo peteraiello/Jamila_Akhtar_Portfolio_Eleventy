@@ -1,13 +1,20 @@
-<section class="hero">
-    {% if hero.title %}
-        <h1>{{ hero.title }}</h1>
-    {% endif %}
-
-    {% if hero.image.src %}
-        <img src="{{ hero.image.src }}" alt="{{ hero.image.altText }}" />
-    {% endif %}
-
-    {% if hero.strapline %}
-        <p>{{ hero.strapline }}</p>
-    {% endif %}
+<section class="hero {{ "theme-" + (hero.theme or "home") }} {{ "bg-" + (hero.backgroundColour or "white") }}">    
+    <div class="container">
+        {% if hero.backgroundImage %}
+            <div class="hero-background-image" style="background-image: url('{{hero.backgroundImage.src}}')"><span>background container</span></div>
+        {% endif %}
+        <div class="hero-meta-wrapper">
+            {% if hero.title %}
+                <h1 class="hero-title">{{ hero.title }}</h1>
+            {% endif %}
+            {% if hero.strapline %}
+                <div class="hero-strapline">
+                    <p>{{ hero.strapline }}</p>
+                </div>
+            {% endif %}
+        </div>
+        {% if hero.image.src %}
+            <img src="{{ hero.image.src }}" alt="{{ hero.image.altText }}" />
+        {% endif %}        
+    </div>
 </section>

@@ -67,6 +67,7 @@ header {
 }
 
 .mobile-menu-wrapper {
+    z-index: 100;
     position: absolute;
     width: 100%;
     display: none;
@@ -213,15 +214,6 @@ body {
     padding: 0;
 }
 
-
-/* Small
-@media (width >= 40rem) { }
-@media (width >= 48rem) { }
-@media (width >= 64rem) { }
-@media (width >= 80rem) { }
-@media (width >= 96rem) { }
-*/
-
 :root {
     --primary-color: #A1CCFF;
     --secondary-color: #196638;
@@ -255,7 +247,6 @@ p {
 
 .container {
     margin: 0 auto;
-    width: 100%;
     padding: 0 20px;
     max-width: 1200px;
 }
@@ -308,5 +299,57 @@ p {
         grid-column: span 12;
     }
 }
+
+
+
+section.hero {
+    position: relative;
+}
+
+section.hero > .container {
+    position: relative;
+}
+
+section.hero.theme-home .hero-background-image {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    max-width: 700px;
+    right: 0;
+}
+
+@media (width >= 40rem) { 
+    section.hero.theme-home .hero-background-image {
+        display: block;
+    }
+}
+
+
+section.hero .hero-background-image span {
+    display: none;
+}
+
+section.hero .hero-meta-wrapper {
+    padding-top: calc(124 / 16 * 1rem);
+    padding-bottom: calc(240 / 16 * 1rem);
+}
+
+section.hero.theme-home .hero-title {
+    font-size: clamp(2rem, 4vw, 4.5rem);
+    color: var(--tertiary-color);
+    margin: 0;
+}
+
+section.hero.theme-home .hero-strapline {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    color: var(--tertiary-color);
+    margin: 0;
+}
+
+
 
 

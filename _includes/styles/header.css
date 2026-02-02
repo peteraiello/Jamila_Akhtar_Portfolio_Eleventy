@@ -67,6 +67,7 @@ header {
 }
 
 .mobile-menu-wrapper {
+    z-index: 100;
     position: absolute;
     width: 100%;
     display: none;

@@ -12,10 +12,11 @@ header:
     ]
 hero: 
     title: "Design Studio"
-    image: 
+    backgroundImage: 
         src: "/images/hero/creative-juice.png"
-        altText: "Illustration of a cat next to a vase"
     strapline: "Branding | Graphics | Illustration"
+    backgroundColour: "white"
+    theme: "home"
 imageText: 
     image: 
         src: "/images/jamila.jpg"

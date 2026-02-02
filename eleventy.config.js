@@ -12,6 +12,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images/favicon");
     eleventyConfig.addPassthroughCopy("scripts");
     eleventyConfig.addPassthroughCopy("images/*.svg");
+    eleventyConfig.addPassthroughCopy("images/hero/creative-juice.png");
     eleventyConfig.addPlugin(eleventyImageTransformPlugin);
     
     // Create a projects collection from the projects folder

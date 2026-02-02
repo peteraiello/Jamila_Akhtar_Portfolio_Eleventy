@@ -4,15 +4,6 @@ body {
     padding: 0;
 }
 
-
-/* Small
-@media (width >= 40rem) { }
-@media (width >= 48rem) { }
-@media (width >= 64rem) { }
-@media (width >= 80rem) { }
-@media (width >= 96rem) { }
-*/
-
 :root {
     --primary-color: #A1CCFF;
     --secondary-color: #196638;
@@ -46,7 +37,6 @@ p {
 
 .container {
     margin: 0 auto;
-    width: 100%;
     padding: 0 20px;
     max-width: 1200px;
 }
