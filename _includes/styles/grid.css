@@ -1,6 +1,7 @@
 .grid {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
     display: grid;
+    gap: calc(12 / 16 * 1rem);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .col-span-1 {

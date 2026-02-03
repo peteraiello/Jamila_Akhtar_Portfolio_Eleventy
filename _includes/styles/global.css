@@ -51,6 +51,7 @@ h6 {
 .body-lead {
     font-size: clamp(1rem, 4vw, 1.25rem);
 }
+
 .gap-xxs {gap: calc(2 / 16 * 1rem);}
 .gap-xs {gap: calc(4 / 16 * 1rem);}
 .gap-sm {gap: calc(6 / 16 * 1rem);}
@@ -62,6 +63,15 @@ h6 {
     .gap-sm {gap: calc(12 / 16 * 1rem);}
     .gap-md {gap: calc(20 / 16 * 1rem);}
     .gap-lg {gap: calc(40 / 16 * 1rem);}
+}
+
+.visually-hidden {
+    display: block;
+    text-decoration: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
 }
 
 .button,
@@ -95,13 +105,17 @@ section {
 }
 
 a.button {
-    transition: all 200ms ease-in-out;
-    font-size: calc(24 / 16 * 1rem);
-    border-radius: calc(50 / 16 * 1rem);
-    padding: calc(10 / 16 * 1rem) calc(54 / 16 * 1rem) ;
+    white-space: nowrap;
     font-weight: 900;
     text-decoration: none;
     display: block;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    transition: all 200ms ease-in-out;
+    border-radius: calc(50 / 16 * 1rem);
+    padding: calc(5 / 16 * 1rem) calc(27 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        padding: calc(10 / 16 * 1rem) calc(54 / 16 * 1rem);
+    }
 }
 
 a.button-tertiary {
@@ -117,5 +131,10 @@ a.button-tertiary:hover {
 a.button-primary {
     color: var(--secondary-color);
     background-color: var(--primary-color);
+}
+
+a.button-primary:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 

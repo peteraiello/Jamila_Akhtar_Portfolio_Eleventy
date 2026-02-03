@@ -3,7 +3,7 @@
         <div class="grid">
             <div class="image-text-image-column">
                 {% if imageTextImage.src %}
-                    <div class="image-text-image__wrapper">
+                    <div class="image-text-image__wrapper {{ "image-text-orientation__" + (imageTextImage.orientation or "portrait") }}">
                         <img src="{{ imageTextImage.src }}" alt="{{ imageTextImage.altText }}" />
                     </div>
                 {% endif %}

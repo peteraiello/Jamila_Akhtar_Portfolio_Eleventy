@@ -22,6 +22,7 @@ imageText:
     image: 
         src: "/images/jamila-portrait.jpg"
         altText: "Jamila portrait"
+        orientation: "portrait"
     title: "Hello there!"
     blurb: "<p>I'm Jamila, an Ottawa-based designer who specializes in branding, graphics and illustration, where I focus on balancing form and function. I work closely with colour to produce striking, identifiable pieces of art.</p>"
     graphic: 
@@ -38,8 +39,8 @@ quickLinks:
         blurb: "<p>A carefully curated treasure trove of my creations.</p>",
         image: 
             {
-                src: "/images/portfolio_thumb.jpg",
-                altText: "Illustration of window and picture frames"
+                src: "/images/drink-up.jpg",
+                altText: "Illustration of soda drink"
             },
         button: 
             {
@@ -49,11 +50,11 @@ quickLinks:
     },
     {
         title: "Experience",
-        blurb: "A list of my credentials and my accomplishments.",
+        blurb: "<p>A list of my credentials and my accomplishments.</p>",
         image: 
             {
-                src: "/images/experience_thumb.jpg",
-                altText: "Illustration of cat with certificate"
+                src: "/images/watering-plant.jpg",
+                altText: "Illustration of watering can"
             },
         button: 
             {

@@ -7,13 +7,17 @@
         {%- for card in quickLinks.cards -%}
             <article class="quick-link-card col-span-6">        
                 {% if card.image.src %}
-                    <img src="{{ card.image.src }}" alt="{{ card.image.altText }}" />
+                    <div class="quick-link-card-image__wrapper">
+                        <img src="{{ card.image.src }}" alt="{{ card.image.altText }}" class="quick-link-card__image" />
+                    </div>
                 {% endif %}
                 {% if card.title %}
                     <h4 class="quick-link-card__title heading-md">{{card.title}}</h4>
                 {% endif %}
                 {% if card.blurb %}
-                    <div class="quick-link-card__blurb">{{ card.blurb }}</div>
+                    <div class="quick-link-card__blurb">
+                        {{ card.blurb | safe }}
+                    </div>
                 {% endif %}
                 {% if card.button.text %}
                     <span class="button-wrapper">

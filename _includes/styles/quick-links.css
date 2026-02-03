@@ -2,3 +2,20 @@ article.quick-link-card .quick-link-card__title {
     color: var(--tertiary-color);
 }
 
+article.quick-link-card .quick-link-card__blurb p {
+    margin-bottom: calc(20 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        margin-bottom: calc(40 / 16 * 1rem);
+    }
+}
+
+article.quick-link-card .quick-link-card-image__wrapper {
+    aspect-ratio: 386 / 291;
+    max-width: 386px;
+}
+
+article.quick-link-card .quick-link-card__image {
+    width: 100%;
+    height: auto;
+}
+
