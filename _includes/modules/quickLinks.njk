@@ -1,18 +1,27 @@
 <section class="quick-links">
+    <div class="container">
     {% if quickLinks.title %}
-        <h1>{{ quickLinks.title }}</h1>
+        <h3>{{ quickLinks.title }}</h3>
     {% endif %}
-    {%- for card in quickLinks.cards -%}
-        <article>        
-            {% if card.image.src %}
-                <img src="{{ card.image.src }}" alt="{{ card.image.altText }}" />
-            {% endif %}
-            {% if card.title %}
-                <h3>{{card.title}}</h3>
-            {% endif %}
-            {% if card.button.text %}
-                <a href="{{ card.button.link }}">{{ card.button.text }}</a>
-            {% endif %}
-        </article>
-    {%- endfor -%}
+    <div class="grid">
+        {%- for card in quickLinks.cards -%}
+            <article class="quick-link-card col-span-6">        
+                {% if card.image.src %}
+                    <img src="{{ card.image.src }}" alt="{{ card.image.altText }}" />
+                {% endif %}
+                {% if card.title %}
+                    <h4 class="quick-link-card__title ">{{card.title}}</h4>
+                {% endif %}
+                {% if card.blurb %}
+                    <div class="quick-link-card__blurb">{{ card.blurb }}</div>
+                {% endif %}
+                {% if card.button.text %}
+                    <span class="button-wrapper">
+                        <a href="{{ card.button.link }}" class="button button-primary">{{ card.button.text }}</a>
+                    </span>
+                {% endif %}
+            </article>
+        {%- endfor -%}
+    </div>
+    </div>
 </section>

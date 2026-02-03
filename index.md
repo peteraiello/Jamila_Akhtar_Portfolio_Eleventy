@@ -22,7 +22,7 @@ imageText:
     image: 
         src: "/images/jamila-portrait.jpg"
         altText: "Jamila portrait"
-    title: "Hello There!"
+    title: "Hello there!"
     blurb: "<p>I'm Jamila, an Ottawa-based designer who specializes in branding, graphics and illustration, where I focus on balancing form and function. I work closely with colour to produce striking, identifiable pieces of art.</p>"
     graphic: 
         src: "/images/flowerpot.svg"
@@ -32,9 +32,10 @@ imageText:
         link: "/about"
     leftToRight: true
 quickLinks: 
-    title: "Work"
+    title: ""
     cards: [{
         title: "Portfolio",
+        blurb: "A carefully curated treasure trove of my creations.",
         image: 
             {
                 src: "/images/portfolio_thumb.jpg",
@@ -48,6 +49,7 @@ quickLinks:
     },
     {
         title: "Experience",
+        blurb: "A list of my credentials and my accomplishments.",
         image: 
             {
                 src: "/images/experience_thumb.jpg",
@@ -59,8 +61,6 @@ quickLinks:
                 link: "/experience"
             }
     }]
-    posts: [{title: "post one"}, 
-            {title: "post two"}]
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"

@@ -16,7 +16,6 @@ section.image-text .image-text-image-column .image-text-image__wrapper img {
 section.image-text .image-text__title {
     color: #A2F4E6;
     margin: 0;
-    font-size: calc(60 / 16 * 1rem);
 }
 
 section.image-text .image-text__content {
