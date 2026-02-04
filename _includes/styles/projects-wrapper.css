@@ -1,0 +1,11 @@
+.projects-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: calc(40 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        margin-bottom: calc(55 / 16 * 1rem);
+    }
+}

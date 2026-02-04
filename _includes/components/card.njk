@@ -1,6 +1,16 @@
-<article class="col-span-3">
-    <img src="{{ cardImage }}" alt="{{ cardImageAlt }}" />
-    <h3>{{cardTitle}}</h3>
-    <p>{{cardExcerpt}}</p>
-    <a href="{{ cardLink }}">Read me</a>
+<article class="project-card col-span-4">
+    {% if cardImage %}
+        <img src="{{ cardImage }}" alt="{{ cardImageAlt }}" class="project-card__image" />
+    {% endif %}
+    {% if cardTitle %}
+        <h3 class="project-card__title heading-md">{{cardTitle}}</h3>
+    {% endif %}
+    {% if cardExcerpt %}
+        <p class="project-card__excerpt">{{cardExcerpt}}</p>
+    {% endif %}
+    {% if cardLink %}
+        <div class="button-wrapper">
+            <a href="{{ cardLink }}" class="button button-tertiary">Click Here</a>
+        </div>
+    {% endif %}
 </article>

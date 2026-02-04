@@ -18,6 +18,7 @@ hero:
     backgroundColour: "primary"
     theme: "portfolio"
 projectsWrapper: 
+    title: ""
     filterButtons: [
         {label: "All", id: "/all"}, 
         {label: "Branding", id: "/branding"},

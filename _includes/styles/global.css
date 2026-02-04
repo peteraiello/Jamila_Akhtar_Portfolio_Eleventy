@@ -105,7 +105,9 @@ section {
     display: flex;
 }
 
+button.button,
 a.button {
+    cursor: pointer;
     white-space: nowrap;
     font-weight: 900;
     text-decoration: none;
@@ -119,23 +121,47 @@ a.button {
     }
 }
 
+button.button,
 a.button-tertiary {
     color: var(--tertiary-offset);
     background-color: var(--tertiary-color);
 }
 
+button.button-tertiary:hover,
 a.button-tertiary:hover {
     color: var(--white);
     background-color: var(--tertiary-offset);
 }
 
+button.button-primary,
 a.button-primary {
     color: var(--secondary-color);
     background-color: var(--primary-color);
 }
 
+button.button-primary:hover,
 a.button-primary:hover {
     color: var(--primary-color);
     background-color: var(--secondary-color);
+}
+
+button.filter-button {
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: 900;
+    text-decoration: none;
+    display: block;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    transition: all 200ms ease-in-out;
+    border-radius: calc(50 / 16 * 1rem);
+    padding: calc(5 / 16 * 1rem) calc(27 / 16 * 1rem);
+    background-color: var(--tertiary-color);
+    color: var(--tertiary-offset);
+    border: 0.125rem solid var(--tertiary-offset);
+}
+
+button.filter-button:hover {
+    color: var(--tertiary-color);
+    background-color: var(--tertiary-offset);
 }
 

@@ -1,13 +1,15 @@
 <section>
-    <h3>Portfolio</h3>
-    <div class="container grid">        
-        <div class="projects">
-            <div class="projects-filters">
-                {%- for button in projectsWrapper.filterButtons %}
-                    <button href="{{button.id}}">{{button.label}}</button>
-                {%- endfor -%}
-            </div>
-            <div class="projects-wrapper">
+    <div class="container-xl">        
+        {% if projectsWrapper.title %}
+            <h3 class="projects-wrapper__title">Portfolio</h3>
+        {% endif %}
+        <div class="projects-filters">
+            {%- for button in projectsWrapper.filterButtons %}
+                <button href="{{button.id}}" class="filter-button">{{button.label}}</button>
+            {%- endfor -%}
+        </div>
+        <div class="projects-wrapper">
+            <div class="grid">
                 {%- for project in collections.projects -%}
                     {% set cardImage = project.data.thumbnail.src %}
                     {% set cardImageAlt = project.data.thumbnail.altText %}
@@ -18,14 +20,14 @@
                 {%- endfor -%}    
             </div>
         </div>
+        <!-- Pagination -->
+            <div class="pagination visually-hidden">
+                <button>Previous</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>Next</button> 
+            </div>
+        <!-- / Pagination end -->
     </div>
-    <!-- Pagination  -->
-    <div class="pagination">
-        <button>Previous</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>Next</button> 
-    </div>
-    <!-- / Pagination end -->
 </section> 
