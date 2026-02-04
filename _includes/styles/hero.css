@@ -16,9 +16,6 @@ section.hero.theme-home .hero-background-image {
     background-size: contain;
     max-width: 700px;
     right: 0;
-    /* Sharper when the image is scaled (e.g. on retina or large viewports) */
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
 }
 
 @media (width >= 40rem) { 
@@ -43,15 +40,18 @@ section.hero.theme-home .hero-meta-wrapper {
     }
 }
 
+section.hero.bg-secondary .hero-strapline,
+section.hero.bg-secondary .hero-title {
+    color: var(--highlight-color);
+}
+
 section.hero .hero-title {
     font-size: clamp(2rem, 4vw, 4.5rem);
-    color: var(--tertiary-color);
     margin: 0;
 }
 
 section.hero.theme-home .hero-strapline {
     font-size: clamp(1.5rem, 2.5vw, 2.25rem);
-    color: var(--tertiary-color);
     margin: 0;
 }
 
@@ -85,6 +85,11 @@ section.hero.theme-portfolio .hero-image-title__wrapper .hero-meta-wrapper h1.he
     }
 }
 
+section.hero.theme-portfolio .hero-meta-wrapper {   
+    order: 2;
+}   
+
+section.hero.theme-experience .hero-image-title__wrapper .hero-image,
 section.hero.theme-portfolio .hero-image-title__wrapper .hero-image {
     display: none;
     @media (width >= 48rem) { 
@@ -92,16 +97,31 @@ section.hero.theme-portfolio .hero-image-title__wrapper .hero-image {
     }
 }
 
-section.hero .hero-image img,
-section.hero .hero-background-image {
-    /* Prefer sharper scaling; use high-quality source images for best result */
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
+section.hero.theme-experience .hero-image-title__wrapper .hero-image {
+    width: 100%;
+    max-width: calc(422 / 16 * 1rem);
 }
 
+section.hero.theme-experience .hero-image-title__wrapper {
+    display: flex;
+    flex-direction: column;
+    @media (width >= 48rem) { 
+        flex-direction: row;
+        justify-content: center;
+    }
+}
 
-section.hero.theme-portfolio .hero-meta-wrapper {   
-    order: 2;
-}   
+section.hero.theme-experience .hero-image-title__wrapper .hero-meta-wrapper {
+    width: 100%;
+    display: flex;
+    width: auto;
+    @media (width >= 48rem) { 
+        max-width: 200px;
+    }
+}
+
+section.hero.theme-experience .hero-image-title__wrapper .hero-meta-wrapper .hero-title {
+    align-self: flex-end;
+}
 
 

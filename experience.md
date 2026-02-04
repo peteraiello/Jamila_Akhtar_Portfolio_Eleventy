@@ -10,6 +10,14 @@ header:
         {label: "About", link: "/about"},
         {label: "Contact", link: "/contact"}
     ]
+hero: 
+    title: "My Experience"
+    image: 
+        src: "/images/hero/watering-can.png"
+        altText: "Illustration of a cat next to a vase"
+    strapline: ""
+    theme: "experience"
+    backgroundColour: "secondary"
 resume: 
     title: "Resume"
     filters: [
@@ -121,12 +129,6 @@ resume:
                 address: "86 North Street, Guildford"
             }
         ]
-hero: 
-    title: "My Experience"
-    image: 
-        src: "/images/hero/watering-can.png"
-        altText: "Illustration of a cat next to a vase"
-    strapline: ""
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"
