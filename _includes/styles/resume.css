@@ -1,0 +1,46 @@
+section.resume h3.resume-title {
+    text-align: center;
+    color: var(--tertiary-offset);
+}
+
+section.resume .filters-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: calc(20 / 16 * 1rem);
+    padding-bottom: calc(50 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        padding-bottom: calc(100 / 16 * 1rem);
+        gap: calc(37 / 16 * 1rem);
+    }
+}
+
+section.resume .filters-section-wrapper .resume-filters__wrapper {
+    display: flex;
+    flex-direction: row;   
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media (width >= 48rem) { 
+        gap: calc(37 / 16 * 1rem);
+    }
+}
+
+section.resume h5.resume-education__title {
+    text-transform: uppercase;
+}
+
+section.resume h5.resume-education__title span {
+    text-transform: none;
+}
+
+
+
+
+section.resume .resume-subtitle {
+    text-transform: uppercase;
+    font-family: "marine-up", sans-serif;
+}
+
+section.resume .button-wrapper {
+    justify-content: center;
+}

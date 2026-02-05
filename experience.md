@@ -129,6 +129,9 @@ resume:
                 address: "86 North Street, Guildford"
             }
         ]
+    sectionButton: 
+        label: "Download my CV"
+        link: "#"
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"

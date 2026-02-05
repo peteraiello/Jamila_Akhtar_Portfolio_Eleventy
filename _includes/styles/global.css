@@ -33,6 +33,14 @@ h6 {
     font-style: normal;
 }
 
+.text-heading {
+    font-family: "rl-aqva", sans-serif;
+}
+
+.text-body {
+    font-family: "marine-up", sans-serif;
+}
+
 /* heading 72px */
 .heading-xl {
     font-size: clamp(2rem, 4vw, 4.5rem);
@@ -52,6 +60,40 @@ h6 {
 /* body 20px */
 .body-lead {
     font-size: clamp(1rem, 4vw, 1.25rem);
+}
+
+
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-tertiary {
+    color: var(--tertiary-color);
+}
+
+.text-tertiary-offset {
+    color: var(--tertiary-offset);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-highlight {
+    color: var(--highlight-color);
 }
 
 .gap-xxs {gap: calc(2 / 16 * 1rem);}
@@ -179,10 +221,16 @@ a.button-tertiary:hover {
     background-color: var(--tertiary-offset);
 }
 
+
 button.button-primary,
 a.button-primary {
     color: var(--secondary-color);
     background-color: var(--primary-color);
+}
+
+button.button-primary.w-border,
+a.button-primary.w-border {
+    border: 3px solid var(--secondary-color);
 }
 
 button.button-primary:hover,
