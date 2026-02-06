@@ -34,12 +34,8 @@
                     </div>
                 {% endif %}
             </div>
-            {% if graphic.src %}
-                <div class="image-text-graphic">
-                    <div class="image-text-image__wrapper">
-                        <img src="{{graphic.src}}" alt="{{graphic.altText}}" />
-                    </div>
-                </div>
+            {% if graphic %}
+                <div class="image-text-graphic"><span class="visually-hidden">graphic</span></div>
             {% endif %}
         </div>
     </div>

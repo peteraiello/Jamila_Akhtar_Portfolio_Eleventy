@@ -5,10 +5,10 @@
     {% endif %}
     <div class="grid">
         {%- for card in quickLinks.cards -%}
-            <article class="quick-link-card col-span-6">        
-                {% if card.image.src %}
-                    <div class="quick-link-card-image__wrapper">
-                        <img src="{{ card.image.src }}" alt="{{ card.image.altText }}" class="quick-link-card__image" />
+            <article class="quick-link-card quick-link-card-index__{{ loop.index }}">  
+                {% if card.icon %}
+                    <div class="quick-link-card__icon quick-link-card-icon__{{ card.icon or "drink-up" }}">
+                        <span class="visually-hidden">icon</span>
                     </div>
                 {% endif %}
                 {% if card.title %}

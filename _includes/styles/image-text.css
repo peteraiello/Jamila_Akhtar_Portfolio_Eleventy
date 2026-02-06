@@ -112,6 +112,12 @@ section.image-text .image-text-graphic {
     }
 }
 
+section.image-text .image-text-graphic {
+    transform: scale(70%);
+    background-image: url("/images/hero/flower-pot.svg");
+    background-repeat: no-repeat;
+}
+
 section.image-text .buttons-wrapper {
     display: flex;
     flex-direction: column;

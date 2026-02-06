@@ -40,14 +40,9 @@ section.hero.theme-home .hero-meta-wrapper {
     }
 }
 
-section.hero.bg-secondary .hero-strapline,
-section.hero.bg-secondary .hero-title {
-    color: var(--highlight-color);
-}
-
-section.hero .hero-title {
-    font-size: clamp(2rem, 4vw, 4.5rem);
-    margin: 0;
+section.hero.theme-home .hero-strapline,
+section.hero.theme-home .hero-title {
+    color: var(--tertiary-color);
 }
 
 section.hero.theme-home .hero-strapline {
@@ -56,6 +51,16 @@ section.hero.theme-home .hero-strapline {
 }
 
 section.hero.theme-home .hero-strapline p {
+    margin: 0;
+}
+
+section.hero.bg-secondary .hero-strapline,
+section.hero.bg-secondary .hero-title {
+    color: var(--highlight-color);
+}
+
+section.hero .hero-title {
+    font-size: clamp(2rem, 4vw, 4.5rem);
     margin: 0;
 }
 
@@ -155,6 +160,9 @@ section.hero .hero-icon {
     }
 }
 
+section.hero .hero-icon-home {
+    display: none;
+}
 section.hero .hero-icon-portfolio {
     background-image: url("/images/hero/soda-can.svg");
 }
