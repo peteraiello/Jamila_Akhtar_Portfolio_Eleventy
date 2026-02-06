@@ -9,6 +9,8 @@
         {% set imageTextTitle = layout.title %}
         {% set imageTextBlurb = layout.text %}
         {% set imageTextImage = layout.image %}
+        {% set imageTextTheme = layout.theme %}
+        {% set imageTextLeftToRight = layout.leftToRight %} 
         {% include "../modules/imageText.njk" %} 
     {% endif %}
     {% if layout.name === "full-width-image" %}

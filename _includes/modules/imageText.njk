@@ -1,4 +1,4 @@
-<section class="image-text{% if imageTextLeftToRight === true %} left-to-right {% else %} right-to-left {% endif %}{{ "bg-" + (imageText.backgroundColour or "white") }}{% if imageText.graphic %} has-graphic{% endif%}">
+<section class="image-text {{ "theme-" + (imageTextTheme or "post") }}{% if imageTextLeftToRight === true %} left-to-right {% else %} right-to-left {% endif %}{{ "bg-" + (imageText.backgroundColour or "white") }}{% if imageText.graphic %} has-graphic{% endif%}">
     <div class="container">
         <div class="grid">
             <div class="image-text-image-column">
@@ -10,10 +10,10 @@
             </div>
             <div class="image-text-text-column gap-lg">
                 {% if imageTextTitle %}
-                    <h3 class="image-text__title heading-xl">{{ imageTextTitle }}</h3>
+                    <h3 class="image-text__title {% if imageTextTheme === "project" %} heading-sm {% else %} heading-xl {% endif %}">{{ imageTextTitle }}</h3>
                 {% endif %}
                 {% if imageTextBlurb %}
-                    <div class="image-text__content">
+                    <div class="image-text__content body-lead">
                         {{ imageTextBlurb | safe }}
                     </div>
                 {% endif %}            

@@ -1,0 +1,98 @@
+section.project-header {
+    padding: 0;
+}
+
+section.project-header ul.article-header__swatches {
+    list-style: none;
+}
+
+section.project-header ul.article-header__tags {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    list-style: none;
+}
+
+section.project-header ul.article-header__tags {
+    padding: 0;
+}
+
+
+section.project-header ul.article-header__tags li::after {
+    content: "|";
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+section.project-header ul.article-header__tags li:last-of-type::after {
+    display: none;
+}
+
+section.project-header ul li.article-header__tag {
+    font-weight: 900;
+}
+
+section.project-header .article-header-meta__wrapper {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+}
+
+section.project-header .article-header__title {
+    margin: calc(50 / 16 * 1rem) 0;
+    @media (width >= 48rem) { 
+        margin: calc(100 / 16 * 1rem) 0;
+    }
+}
+
+section.project-header .article-header-meta__wrapper p.article-header__meta {
+    margin: 0;
+}
+
+section.project-header .article-header-loc__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    @media (width >= 48rem) {
+        justify-content: end;
+        align-items: end;       
+    }
+}
+
+section.project-header p.article-header__location {
+    margin: 0;
+}
+
+section.project-header ul.article-header__swatches {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: calc(12 / 16 * 1rem);
+    padding: 0;
+}
+
+section.project-header ul.article-header__swatches li.article-header__swatch {
+    overflow: hidden;
+    border-radius: 50%;
+    width: clamp(2rem, 4vw, 4.68rem);
+    height: clamp(2rem, 4vw, 4.68rem);
+}
+
+section.project-header ul.article-header__swatches li.article-header__swatch.w-border {
+    border: 1px solid var(--dark);
+}
+
+section.project-header .article-header-image__wrapper {
+    aspect-ratio: 1200 / 500;
+}  
+
+section.project-header .article-header-image__wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+

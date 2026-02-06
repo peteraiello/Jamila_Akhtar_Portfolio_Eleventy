@@ -1,4 +1,5 @@
-header {
+
+header.main-header {
     background-color: var(--primary-color);
 }
 
@@ -125,6 +126,7 @@ header {
 }
 
 
+
 footer {
     padding-top: calc(64 / 16 * 1rem);
     padding-bottom: calc(64 / 16 * 1rem);
@@ -240,6 +242,7 @@ footer nav.footer-menu ul li a:hover::after {
 .footer-social-media-wrapper {
     display: flex;   
 }
+
 
 
 
@@ -538,6 +541,7 @@ button.filter-button:hover {
     background-color: var(--tertiary-offset);
 }
 
+
 .grid {
     display: grid;
     gap: calc(12 / 16 * 1rem);
@@ -828,14 +832,48 @@ section.image-text.right-to-left .image-text-image-column .image-text-image__wra
 
 section.image-text .image-text-image-column .image-text-image__wrapper.image-text-orientation__portrait {
     aspect-ratio: 285 / 380;
-    max-height: 385px;
     overflow: hidden;
-    border-radius: calc(24 / 16 * 1rem);
+} 
+
+section.image-text.right-to-left .image-text-image-column .image-text-image__wrapper.image-text-orientation__portrait {
+    margin-left: 0;
+    @media (width >= 48rem) { 
+        margin-left: calc(80 / 16 * 1rem);
+    }
 }   
+
+section.image-text.left-to-right .image-text-image-column .image-text-image__wrapper.image-text-orientation__portrait {
+    margin-right: 0;
+    @media (width >= 48rem) { 
+        margin-right: calc(80 / 16 * 1rem);
+    }
+}
+
+section.image-text.theme-project.right-to-left .image-text-image-column {
+    grid-column: span 12;
+    @media (width >= 40rem) { 
+        grid-column-start: 9;
+        grid-column-end: 13;
+    }
+}
+
+section.image-text.theme-project.right-to-left .image-text-text-column {
+    color: var(--dark);
+    grid-column: span 12;
+    @media (width >= 40rem) { 
+        grid-column: span 7;
+    }
+}
+
+section.image-text.theme-project .image-text-text-column .image-text__title {
+    color: var(--dark);
+    text-transform: uppercase;
+}
 
 section.image-text .image-text-image-column .image-text-image__wrapper img {
     width: 100%;
     height: 100%;
+    border-radius: calc(24 / 16 * 1rem);
 }
 
 section.image-text.bg-secondary .image-text__content, 
@@ -917,6 +955,7 @@ section.image-text .buttons-wrapper {
         flex-direction: row;
     }
 }
+
 
 article.quick-link-card.quick-link-card-index__1 {
     grid-column-start: 1; 
@@ -1187,6 +1226,106 @@ section.featured-projects .featured-projects__title {
         margin-bottom: calc(40 / 16 * 1rem);
     }
 }
+
+
+section.project-header {
+    padding: 0;
+}
+
+section.project-header ul.article-header__swatches {
+    list-style: none;
+}
+
+section.project-header ul.article-header__tags {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    list-style: none;
+}
+
+section.project-header ul.article-header__tags {
+    padding: 0;
+}
+
+
+section.project-header ul.article-header__tags li::after {
+    content: "|";
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+section.project-header ul.article-header__tags li:last-of-type::after {
+    display: none;
+}
+
+section.project-header ul li.article-header__tag {
+    font-weight: 900;
+}
+
+section.project-header .article-header-meta__wrapper {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+}
+
+section.project-header .article-header__title {
+    margin: calc(50 / 16 * 1rem) 0;
+    @media (width >= 48rem) { 
+        margin: calc(100 / 16 * 1rem) 0;
+    }
+}
+
+section.project-header .article-header-meta__wrapper p.article-header__meta {
+    margin: 0;
+}
+
+section.project-header .article-header-loc__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    @media (width >= 48rem) {
+        justify-content: end;
+        align-items: end;       
+    }
+}
+
+section.project-header p.article-header__location {
+    margin: 0;
+}
+
+section.project-header ul.article-header__swatches {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: calc(12 / 16 * 1rem);
+    padding: 0;
+}
+
+section.project-header ul.article-header__swatches li.article-header__swatch {
+    overflow: hidden;
+    border-radius: 50%;
+    width: clamp(2rem, 4vw, 4.68rem);
+    height: clamp(2rem, 4vw, 4.68rem);
+}
+
+section.project-header ul.article-header__swatches li.article-header__swatch.w-border {
+    border: 1px solid var(--dark);
+}
+
+section.project-header .article-header-image__wrapper {
+    aspect-ratio: 1200 / 500;
+}  
+
+section.project-header .article-header-image__wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
 
 
 section.contact-form .column-text {

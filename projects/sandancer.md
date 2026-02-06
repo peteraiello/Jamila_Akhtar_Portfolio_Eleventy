@@ -3,6 +3,7 @@ layout: "/layout/project.njk"
 permalink: "/portfolio/sandancer/"
 title: "Sandancer EP"
 tags: project
+specializations: ["Illustrations", "Graphics"]
 excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
 startDate: 2025-01-15
 endDate: 2025-03-15

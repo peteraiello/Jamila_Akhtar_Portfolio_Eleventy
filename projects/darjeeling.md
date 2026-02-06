@@ -29,12 +29,14 @@ flexibleLayout: [
         title: "Brief",
         image: {
             src: "/images/projects/darjeeling/bear-illustration.jpg",
-            altText: "Illustration of bear"
+            altText: "Illustration of bear",
+            orientation: "landscape"
         },
-        text: 
-            <p>Paragraph One</p>
-
-            <p>Paragraph Two</p>
+        leftToRight: false,
+        text:
+            "<p>Develop a brand kit for an upcoming creative blog that covers a wide range of creative interests the blogger enjoys exploring. It is to be a contemporary blog featuring regular blog posts on top of zines, junk journal posts and a gallery wall featuring the blogger’s photographs.</p>
+            <p>Therefore the brand identity needed to fully reflect both the blog and the blogger, seeing as they are one and the same.</p>",
+        theme: "project"
     },
     {
         name: "full-width-image",
@@ -47,13 +49,14 @@ flexibleLayout: [
         name: "image-text",
         title: "Concept",
         image: {
-            src: "/images/placeholder.png",
+            src: "/images/mobile-concept.jpg",
             altText: "Placeholder image"
         },
+        theme: "project",
+        leftToRight: true,
         text: 
-            <p>Paragraph One</p>
-
-            <p>Paragraph Two</p>
+            "<p>The design concept was inspired by the warmth felt from reading a good story or dreamily crafting something in a cosy nook far away from the world going on around you. A safe haven for creative practices, playfulness and building a community of like-minded souls. But also a way to look back fondly on the journey with a good does of nostalgia.</p>
+            <p>It is a (virtual) den where the blogger can explore her curiosities in comfort. It is a place where she can be playful and find her courage as well as bring fellow creatives together by sharing what she has learned and discovered along the way. To have a space where we are free to be curious and whimsically inventive.</p>"
     },
     {
         name: "full-width-image",

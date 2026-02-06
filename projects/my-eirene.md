@@ -3,6 +3,7 @@ layout: "/layout/project.njk"
 permalink: "/portfolio/my-eirene/"
 title: "MyEirene Ltd"
 tags: project
+specializations: ["Branding"]
 excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
 startDate: 2025-01-15
 endDate: 2025-03-15
