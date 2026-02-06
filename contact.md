@@ -15,13 +15,17 @@ hero:
     image: 
         src: "/images/hero/creative_power.png"
         altText: "Illustration of a cat next to a vase"
+    theme: "contact"
+    backgroundColour: "secondary"
+form: 
+    title: "Keen to work with me?</ br> Then please get in touch!"
+    backgroundColour: "tertiary"
+    theme: "contact"
 featuredProjects: 
     title: "Check Out My Projects"
-    projects: [
-            {data: {title: "Those Darjeeling Days", img: {src: "/images/projects/darjeeling.png", altText: "Darjeeling days project"}}},
-            {data: {title: "MyEirene", img: {src: "/images/projects/my_eirene.png", altText: "my eirene"}}},
-            {data: {title: "Sandancer EP", img: {src: "/images/projects/sandancer.png", altText: "sandancer"}}}
-        ]
+    projects: ["Those Darjeeling Days", "MyEirene Ltd", "Sandancer EP"]
+    backgroundColour: "white"
+    cardTheme: "secondary"
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"

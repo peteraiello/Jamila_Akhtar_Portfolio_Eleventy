@@ -132,6 +132,11 @@ resume:
     sectionButton: 
         label: "Download my CV"
         link: "#"
+featuredProjects: 
+    title: "Check Out My Projects"
+    projects: ["Those Darjeeling Days", "MyEirene Ltd", "Sandancer EP"]
+    backgroundColour: "secondary"
+    cardTheme: "secondary"
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"

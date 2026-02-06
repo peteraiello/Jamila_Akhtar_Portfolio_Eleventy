@@ -1,11 +1,24 @@
-<section class="featured-projects">
-    <h3>{{ featuredProjects.title }}</h3>
-    {%- for project in featuredProjects.projects -%}
-        {% set cardImage = project.data.img.src %}
-        {% set cardImageAlt = project.data.img.altText %}
-        {% set cardTitle = project.data.title %}
-        {% set cardExcerpt = project.data.excerpt %}      
-        {% set cardLink = project.data.button.link %}
-        {% include "../components/card.njk" %}
-    {%- endfor -%}    
+<section class="featured-projects {{ "bg-" + (featuredProjects.backgroundColour or "white") }}">
+    <div class="container">
+        {% if featuredProjects.title %}   
+            <div class="featured-projects-title__wrapper">
+                <h3 class="featured-projects__title">{{ featuredProjects.title }}</h3>
+            </div>
+        {% endif %}
+        {% if collections.projects %}
+            <div class="grid">
+                {%- for project in collections.projects -%}
+                    {% set cardImage = project.data.thumbnail.src %}
+                    {% set cardImageAlt = project.data.thumbnail.altText %}
+                    {% set cardTitle = project.data.title %}
+                    {% set cardExcerpt = project.data.excerpt %}      
+                    {% set cardLink = project.data.permalink %}
+                    {% set cardTheme = featuredProjects.cardTheme %}
+                    {% if cardTitle in featuredProjects.projects %}
+                        {% include "../components/card.njk" %}
+                    {% endif %}
+                {%- endfor -%} 
+            </div>
+        {% endif %}
+    </div>
 </section>

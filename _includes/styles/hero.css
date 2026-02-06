@@ -87,20 +87,6 @@ section.hero.theme-portfolio .hero-image-title__wrapper .hero-meta-wrapper h1.he
 
 section.hero.theme-portfolio .hero-meta-wrapper {   
     order: 2;
-}   
-
-section.hero.theme-about .hero-image-title__wrapper .hero-image,
-section.hero.theme-experience .hero-image-title__wrapper .hero-image,
-section.hero.theme-portfolio .hero-image-title__wrapper .hero-image {
-    display: none;
-    @media (width >= 48rem) { 
-        display: block;
-    }
-}
-
-section.hero.theme-experience .hero-image-title__wrapper .hero-image {
-    width: 100%;
-    max-width: calc(422 / 16 * 1rem);
 }
 
 section.hero.theme-experience .hero-image-title__wrapper {
@@ -134,6 +120,28 @@ section.hero.theme-about .hero-image-title__wrapper {
     }
 }
 
+section.hero.theme-contact .hero-image-title__wrapper {
+    display: flex;
+    gap: calc(122 / 16 * 1rem);
+    justify-content: left;
+    @media (width >= 48rem) {
+        justify-content: center;
+    }
+}
+
+section.hero.theme-contact .hero-image-title__wrapper .hero-title {
+    width: 100%;
+    max-width: calc(200 / 16 * 1rem);
+    text-align: left;
+    @media (width >= 48rem) {
+        text-align: right;
+    }
+} 
+
+section.hero.theme-contact .hero-image-title__wrapper .hero-meta-wrapper {
+    order: 2;
+}
+
 section.hero .hero-icon {
     display: none;
     @media (width >= 48rem) { 
@@ -157,5 +165,9 @@ section.hero .hero-icon-experience {
 
 section.hero .hero-icon-about {
     background-image: url("/images/hero/flower-pot.svg");
+}
+
+section.hero .hero-icon-contact {
+    background-image: url("/images/hero/battery.svg");
 }
 

@@ -1,10 +1,36 @@
 article.project-card {
     display: flex;
+    gap: calc(20 / 16 * 1rem);
     flex-direction: column;
     padding: 1.125rem;
     overflow: hidden;
-    border: 3px solid var(--tertiary-offset);
     border-radius: 1.25rem;
+}
+
+article.theme-tertiary-offset {
+    border: 3px solid var(--tertiary-offset);
+}
+
+article.theme-secondary {
+    border: 3px solid var(--secondary-color);
+}
+
+article.theme-secondary {
+    background-color: var(--white);
+}
+
+article.theme-secondary .project-card__title {
+    color: var(--secondary-color);
+}
+
+article.project-card p.project-card__excerpt {
+    margin: 0;
+}
+
+article.project-card .project-card-image__wrapper {
+    background-color: var(--primary-color);
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 article.project-card .project-card__image {

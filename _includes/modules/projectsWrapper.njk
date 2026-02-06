@@ -16,6 +16,7 @@
                     {% set cardTitle = project.data.title %}
                     {% set cardExcerpt = project.data.excerpt %}      
                     {% set cardLink = project.data.permalink %}
+                    {% set cardTheme = project.data.theme %}    
                     {% include "../components/card.njk" %}
                 {%- endfor -%}    
             </div>

@@ -1,0 +1,15 @@
+section.featured-projects .featured-projects__title {
+    text-align: center;
+
+}
+
+section.featured-projects.bg-secondary .featured-projects__title {
+    color: var(--primary-color);
+}
+
+section.featured-projects .featured-projects__title {
+    margin-bottom: calc(20 / 16 * 1rem);
+    @media (width >= 48rem) {
+        margin-bottom: calc(40 / 16 * 1rem);
+    }
+}

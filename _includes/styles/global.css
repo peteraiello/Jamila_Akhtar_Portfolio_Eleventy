@@ -61,6 +61,12 @@ h6 {
 .heading-sm {
     font-size: clamp(1.25rem, 4vw, 1.5rem);
 }
+
+/* heading 45px */
+.featured-projects__title {
+    font-size: clamp(1.45rem, 4vw, 2.813rem);
+}
+
 /* body 20px */
 .body-lead {
     font-size: clamp(1rem, 4vw, 1.25rem);
@@ -279,6 +285,7 @@ button.form-button {
     transition: all 200ms ease-in-out;
     border-radius: 0.5rem;
     padding: calc(5 / 16 * 1rem) calc(27 / 16 * 1rem);
+    background-color: transparent;
 }
 
 button.filter-button:hover {

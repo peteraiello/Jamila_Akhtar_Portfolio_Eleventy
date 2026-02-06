@@ -1,4 +1,4 @@
-<section class="contact-form {{ "bg-" + (form.backgroundColour or "secondary") }}">
+<section class="contact-form {{ "theme-" + (form.theme or "portfolio") }} {{ "bg-" + (form.backgroundColour or "secondary") }}">
     <div class="container">
         <div class="grid">
             <div class="column-text">
@@ -7,9 +7,7 @@
                 {% endif %}
 
                 {% if form.graphic %}
-                    <div class="graphic-wrapper">
-                        <img src="{{ form.graphic.src }}" alt="{{ form.graphic.altText}}" /> 
-                    </div>
+                    <div class="graphic-wrapper"><span class="visually-hidden">graphic</span></div>
                 {% endif %}
             </div>
             <div class="column-form">

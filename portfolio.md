@@ -26,11 +26,10 @@ projectsWrapper:
         {label: "Illustration", id: "/illustration"},
 ]
 form: 
-    backgroundColour: "secondary"
     title: "Keen to work with me? <span>Then please get in touch!</span>"
-    graphic: 
-        src: "/images/form/cherry-punnet.png"
-        altText: "Cherry Punnet"
+    backgroundColour: "secondary"
+    theme: "portfolio"
+    graphic: true
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"
