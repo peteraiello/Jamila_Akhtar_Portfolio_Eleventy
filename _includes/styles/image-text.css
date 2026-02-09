@@ -38,7 +38,7 @@ section.image-text.right-to-left .image-text-image-column .image-text-image__wra
 }
 
 section.image-text .image-text-image-column .image-text-image__wrapper.image-text-orientation__portrait {
-    aspect-ratio: 285 / 380;
+    /* aspect-ratio: 285 / 380; */
     overflow: hidden;
 } 
 

@@ -21,11 +21,21 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("images/hero/flower-pot.svg");
     eleventyConfig.addPassthroughCopy("images/hero/battery.svg"); 
     eleventyConfig.addPassthroughCopy("images/cherry-punnet.svg");
+    
     eleventyConfig.addPassthroughCopy("images/projects/darjeeling/dd-logo-primary.svg");
     eleventyConfig.addPassthroughCopy("images/projects/darjeeling/dd-logo-secondary.svg");
     eleventyConfig.addPassthroughCopy("images/projects/darjeeling/dd-logo-logomark.svg");
     eleventyConfig.addPassthroughCopy("images/projects/darjeeling/dd-logo-submark-primary.svg");
-    eleventyConfig.addPassthroughCopy("images/projects/darjeeling/dd-logo-submark-secondary.svg");    
+    eleventyConfig.addPassthroughCopy("images/projects/darjeeling/dd-logo-submark-secondary.svg");
+
+    eleventyConfig.addPassthroughCopy("images/projects/my_eirene/me-logo-primary.svg");
+    eleventyConfig.addPassthroughCopy("images/projects/my_eirene/me-logo-secondary.svg");
+    eleventyConfig.addPassthroughCopy("images/projects/my_eirene/me-logo-logomark.svg");
+    eleventyConfig.addPassthroughCopy("images/projects/my_eirene/me-logo-submark.svg");
+
+    eleventyConfig.addPassthroughCopy("images/projects/my_eirene/me-sceptre-of-the-goddess.svg");
+    eleventyConfig.addPassthroughCopy("images/projects/my_eirene/me-goddess-of-peace.svg");
+
     eleventyConfig.addPlugin(eleventyImageTransformPlugin);
 
     // Create a projects collection from the projects folder

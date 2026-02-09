@@ -813,7 +813,7 @@ section.image-text.right-to-left .image-text-image-column .image-text-image__wra
 }
 
 section.image-text .image-text-image-column .image-text-image__wrapper.image-text-orientation__portrait {
-    aspect-ratio: 285 / 380;
+    /* aspect-ratio: 285 / 380; */
     overflow: hidden;
 } 
 
@@ -1483,6 +1483,28 @@ section.text-block article.signpost p.caption {
     font-weight: 900;
 }
 
+section.text-block article.signpost .logo {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 1 / 1;
+}  
+
+section.text-block article.signpost .logo.logo-me-olive-branch {
+    background-image: url('/images/projects/my_eirene/me-logo-logomark.svg');
+}
+
+
+section.text-block article.signpost .logo.logo-me-greek-goddess {
+    background-image: url('/images/projects/my_eirene/me-goddess-of-peace.svg');
+}
+
+
+section.text-block article.signpost .logo.logo-me-sceptre-of-goddess {
+    background-image: url('/images/projects/my_eirene/me-sceptre-of-the-goddess.svg');
+}
+
 section.logo-grid {
     background-color: white;
 }
@@ -1504,6 +1526,20 @@ section.logo-grid .grid.logo-grid-wrapper {
     background-color: var(--light-gray);
 }
 
+section.logo-grid .item {
+    position: relative;
+    border-color: var(--secondary-color);
+    border-style: solid;
+    padding: 3rem;
+}
+
+section.logo-grid .item .logo-grid__title {
+    margin-top: 0.5rem;
+    top: 0;
+    position: absolute;
+    text-transform: uppercase;
+}
+
 /*
     first-full 
     mid-left
@@ -1512,24 +1548,13 @@ section.logo-grid .grid.logo-grid-wrapper {
     bottom-right
 */
 
-section.logo-grid .item {
-    position: relative;
-    border-color: var(--secondary-color);
-    border-style: solid;
-    padding: 2rem;
-}
-
-section.logo-grid .item .logo-grid__title {
-    top: 0;
-    position: absolute;
-}
-
 section.logo-grid .item.first-full {
     border-width: 3px 3px 0px 3px;
     border-top-left-radius: calc(30 / 16 * 1rem);
     border-top-right-radius: calc(30 / 16 * 1rem);
 }
 
+ 
 section.logo-grid .item.mid-left {
     border-width: 3px 3px 3px 3px;
 }
@@ -1540,6 +1565,11 @@ section.logo-grid .item.mid-right {
         border-width: 3px 3px 3px 0px;
     }
 }
+
+section.logo-grid .item.mid-full {
+    border-width: 3px;
+}
+
 
 section.logo-grid .item.bottom-left {
     border-width: 0px 3px 3px 3px;
@@ -1559,7 +1589,6 @@ section.logo-grid .item.bottom-right {
     }
 }
 
-
 section.logo-grid .logo-wrapper {
     display: flex;
     height: 100%;
@@ -1567,11 +1596,9 @@ section.logo-grid .logo-wrapper {
 }
 
 section.logo-grid .logo-wrapper .logo {
-    width: 100%;
-}
-
-section.logo-grid.theme-darjeeling .logo {
+    width: 100%;   
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
 }
 
@@ -1583,18 +1610,17 @@ section.logo-grid .item .logo.orientation-landscape {
     aspect-ratio: 7 / 1;
 }
 
-section.logo-grid .item.first-full .logo {
-    background-size: contain;
-}
+/*
+    section.logo-grid.theme-darjeeling .logo-dd-primary
+    section.logo-grid.theme-darjeeling .logo-dd-secondary
+    section.logo-grid.theme-darjeeling .logo-dd-logomark
+    section.logo-grid.theme-darjeeling .logo-dd-submark-primary
+    section.logo-grid.theme-darjeeling .logo-dd-submark-secondary
+*/
 
-section.logo-grid .item.mid-left .logo, 
-section.logo-grid .item.mid-right .logo {
-    background-size: contain;
-}
 
 section.logo-grid.theme-darjeeling .logo-dd-primary {
     background-image: url('/images/projects/darjeeling/dd-logo-primary.svg');
-    background-position: center;
 }
 
 section.logo-grid.theme-darjeeling .logo-dd-secondary {
@@ -1613,4 +1639,18 @@ section.logo-grid.theme-darjeeling .logo-dd-submark-secondary {
     background-image: url('/images/projects/darjeeling/dd-logo-submark-secondary.svg');
 }
 
+section.logo-grid.theme-my-eirene .logo-me-primary {
+    background-image: url('/images/projects/my_eirene/me-logo-primary.svg');
+}
 
+section.logo-grid.theme-my-eirene .logo-me-secondary {
+    background-image: url('/images/projects/my_eirene/me-logo-secondary.svg');
+}
+
+section.logo-grid.theme-my-eirene .logo-me-logomark {
+    background-image: url('/images/projects/my_eirene/me-logo-logomark.svg');
+}
+
+section.logo-grid.theme-my-eirene .logo-me-submark {
+    background-image: url('/images/projects/my_eirene/me-logo-submark.svg');
+}

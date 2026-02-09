@@ -1,9 +1,12 @@
 {% if signposts %}
     <div class="grid">
         {%- for signpost in signposts -%}
-            <article class="signpost {% if columns === 3 %}col-span-4{% elif columns === 4 %}col-span-3{% elif columns === 6 %} col-span-2 {% endif %}">
+            <article class="signpost {% if columns === 3 %}col-span-4{% elif columns === 4 %}col-span-3{% elif columns === 2 %}col-span-6{% elif columns === 6 %}col-span-2{% endif %}">
                 {% if(signpost.img.src) %}
                     <img src="{{ signpost.img.src}}" alt="{{signpost.img.alt}}" />
+                {% endif %}
+                {% if(signpost.icon) %}
+                    <div class="logo {{ "logo-" + signpost.icon }}"><span class="visually-hidden">{{ signpost.icon }}</span></div>
                 {% endif %}
                 {% if(signpost.title) %}
                     <p class="caption body-lead">{{signpost.title}}</p>
