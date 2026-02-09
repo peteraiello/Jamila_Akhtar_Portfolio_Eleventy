@@ -59,10 +59,56 @@ flexibleLayout: [
             <p>It is a (virtual) den where the blogger can explore her curiosities in comfort. It is a place where she can be playful and find her courage as well as bring fellow creatives together by sharing what she has learned and discovered along the way. To have a space where we are free to be curious and whimsically inventive.</p>"
     },
     {
-        name: "full-width-image",
-        fullImage: {
-            src: "/images/projects/darjeeling/darjeeling-brands.jpg",
-            altText: "Darjeeling different brand versions"
+        name: "logo-grid",
+        logoGrid: {
+            theme: "darjeeling", 
+            items: [
+                {
+                    title: "Primary",                
+                    span: "full",
+                    theme: "first-full",
+                    logo: {
+                        name: "dd-primary",
+                        orientation: "landscape"
+                    },
+                },
+                {
+                    title: "Secondary",
+                    span: "2/3",
+                    theme: "mid-left",
+                    logo: {
+                        name: "dd-secondary",
+                        orientation: "square"
+                    },
+                },
+                {
+                    title: "Logomark",
+                    span: "1/3",
+                    theme: "mid-right",
+                    logo: {
+                        name: "dd-logomark",
+                        orientation: "square"
+                    },
+                },
+                {
+                    title: "Submark - Primary",
+                    span: "2/3",
+                    theme: "bottom-left",
+                    logo: {
+                        name: "dd-submark-primary",
+                        orientation: "square"
+                    },
+                },
+                {
+                    title: "Submark - Secondary",
+                    span: "1/3",
+                    theme: "bottom-right",
+                    logo: {
+                        name: "dd-submark-secondary",
+                        oritentation: "square"
+                    },
+                }
+            ] 
         }
     },
     {

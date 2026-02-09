@@ -24,6 +24,11 @@
         {% set signposts = layout.signposts.items %}
         {% include "../modules/textBlock.njk" %}
     {% endif %}
+    {% if layout.name === "logo-grid" %}
+        {% set theme = layout.logoGrid.theme %}
+        {% set items = layout.logoGrid.items %}
+        {% include "../modules/logoGrid.njk" %}
+    {% endif %}
 {%- endfor -%}
 
 <div class="container">

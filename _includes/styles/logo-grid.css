@@ -1,0 +1,130 @@
+section.logo-grid {
+    background-color: white;
+}
+
+section.logo-grid .span-full {
+    grid-column: span 12;
+}
+
+section.logo-grid .logo-image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+section.logo-grid .grid {
+    gap: 0;
+}
+
+section.logo-grid .grid.logo-grid-wrapper {
+    background-color: var(--light-gray);
+}
+
+/*
+    first-full 
+    mid-left
+    mid-right
+    bottom-left
+    bottom-right
+*/
+
+section.logo-grid .item {
+    position: relative;
+    border-color: var(--secondary-color);
+    border-style: solid;
+    padding: 2rem;
+}
+
+section.logo-grid .item .logo-grid__title {
+    top: 0;
+    position: absolute;
+}
+
+section.logo-grid .item.first-full {
+    border-width: 3px 3px 0px 3px;
+    border-top-left-radius: calc(30 / 16 * 1rem);
+    border-top-right-radius: calc(30 / 16 * 1rem);
+}
+
+section.logo-grid .item.mid-left {
+    border-width: 3px 3px 3px 3px;
+}
+
+section.logo-grid .item.mid-right {
+    border-width: 0px 3px 3px 3px;
+    @media (width >= 48rem) { 
+        border-width: 3px 3px 3px 0px;
+    }
+}
+
+section.logo-grid .item.bottom-left {
+    border-width: 0px 3px 3px 3px;
+    @media (width >= 48rem) { 
+        border-bottom-left-radius: calc(30 / 16 * 1rem);
+    }
+}
+
+section.logo-grid .item.bottom-right {
+    border-width: 0px 3px 3px 3px;
+    border-bottom-left-radius: calc(30 / 16 * 1rem);
+    border-bottom-right-radius: calc(30 / 16 * 1rem);
+    @media (width >= 48rem) {
+        border-width: 0 3px 3px 0; 
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: calc(30 / 16 * 1rem);
+    }
+}
+
+
+section.logo-grid .logo-wrapper {
+    display: flex;
+    height: 100%;
+    max-height: calc(300 / 16 * 1rem);
+}
+
+section.logo-grid .logo-wrapper .logo {
+    width: 100%;
+}
+
+section.logo-grid.theme-darjeeling .logo {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section.logo-grid .item .logo.orientation-square {
+    aspect-ratio: 1 / 1;
+}
+
+section.logo-grid .item .logo.orientation-landscape {
+    aspect-ratio: 7 / 1;
+}
+
+section.logo-grid .item.first-full .logo {
+    background-size: contain;
+}
+
+section.logo-grid .item.mid-left .logo, 
+section.logo-grid .item.mid-right .logo {
+    background-size: contain;
+}
+
+section.logo-grid.theme-darjeeling .logo-dd-primary {
+    background-image: url('/images/projects/darjeeling/dd-logo-primary.svg');
+    background-position: center;
+}
+
+section.logo-grid.theme-darjeeling .logo-dd-secondary {
+    background-image: url('/images/projects/darjeeling/dd-logo-secondary.svg');
+}
+
+section.logo-grid.theme-darjeeling .logo-dd-logomark {
+    background-image: url('/images/projects/darjeeling/dd-logo-logomark.svg');
+}
+
+section.logo-grid.theme-darjeeling .logo-dd-submark-primary {
+    background-image: url('/images/projects/darjeeling/dd-logo-submark-primary.svg');
+}
+
+section.logo-grid.theme-darjeeling .logo-dd-submark-secondary {
+    background-image: url('/images/projects/darjeeling/dd-logo-submark-secondary.svg');
+}
+
