@@ -18,6 +18,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
         formats: ["webp", "jpeg", "svg"],
         svgShortCircuit: false,
+        skipped: ["svg"],
         // This tells the plugin to skip processing SVG files
         extensions: "html"
     });
