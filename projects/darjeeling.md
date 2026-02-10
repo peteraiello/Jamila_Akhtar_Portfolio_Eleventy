@@ -115,7 +115,7 @@ flexibleLayout: [
         name: "text-block", 
         title: "Logo Design",
         content: 
-            "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis mi et sapien luctus pharetra. Sed et diam in sem tempus viverra non vel enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam quis vulputate diam. Suspendisse potenti. Aliquam rhoncus purus eget ipsum venenatis, eget venenatis nulla aliquam. Vivamus finibus, metus non pellentesque ornare, turpis urna eleifend mi, a suscipit sem massa et ligula. Suspendisse sit amet libero at urna blandit molestie at sit amet risus.</p>"
+            "<p>The lettering was hand-drawn and designed specifically for the blog. The curvy, organic lines in the custom designed typeface brought in that nostalgic feeling with a retro twist. The wolf character was brought in to give both a storybook feel and a sense that adventure is around every corner, you just have to go out and seek it. Adding the animal character gave it a whimsical and playful edge; giving space for curiosity to abound.</p>"
     },
     {
         name: "full-width-image",
@@ -128,9 +128,9 @@ flexibleLayout: [
         name: "text-block", 
         title: "Colourways",
         content: 
-            "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis mi et sapien luctus pharetra. Sed et diam in sem tempus viverra non vel enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam quis vulputate diam. </p>
+            "<p>The colour palette was really where the folksy aspect came in. The two primary colours are the blue and dark green, followed by the purple and burgundy as secondary colours and the pink, light green and white being the tertiary colours.</p>
             
-            <p>Suspendisse potenti. Aliquam rhoncus purus eget ipsum venenatis, eget venenatis nulla aliquam. Vivamus finibus, metus non pellentesque ornare, turpis urna eleifend mi, a suscipit sem massa et ligula. Suspendisse sit amet libero at urna blandit molestie at sit amet risus.</p>"
+            <p>It was important to have some brighter colours to lend to the playful energy whilst balancing it out with some more subdued colours for that grounded, cosy warmth. The colour palette needed to feel comforting, whimsical and playful, hence the choice of not overly bright or overly neutral hues.</p>"
     },
     {
         name: "text-block", 
@@ -144,9 +144,9 @@ flexibleLayout: [
             ]
         },
         content: 
-            "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis mi et sapien luctus pharetra. Sed et diam in sem tempus viverra non vel enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam quis vulputate diam.</p>
+            "<p>Creatures often feature in storybooks, so we decided to bring them forward into the brand design by selecting three animals that represented the values of the blog: Connection, Adventure, Wisdom, Cosiness, Creativity and Play. </p>
             
-            <p>Suspendisse potenti. Aliquam rhoncus purus eget ipsum venenatis, eget venenatis nulla aliquam. Vivamus finibus, metus non pellentesque ornare, turpis urna eleifend mi, a suscipit sem massa et ligula. Suspendisse sit amet libero at urna blandit molestie at sit amet risus.</p>"
+            <p>They are all hand-drawn and inspired by lino print design. Despite it being a creative blog, the wolf is the primary character because it represents connection and adventure, the two main themes of the blog - connecting to others and being brave by exploring.</p>"
     },
     {
         name: "text-block", 
@@ -163,9 +163,8 @@ flexibleLayout: [
             ]
         },
         content: 
-            "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis mi et sapien luctus pharetra. Sed et diam in sem tempus viverra non vel enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam quis vulputate diam.</p>
-            
-            <p>Suspendisse potenti. Aliquam rhoncus purus eget ipsum venenatis, eget venenatis nulla aliquam. Vivamus finibus, metus non pellentesque ornare, turpis urna eleifend mi, a suscipit sem massa et ligula. Suspendisse sit amet libero at urna blandit molestie at sit amet risus.</p>"
+            "<p>The six illustrations are minor features that were brought into the brand patterns (see below) to add to the whimsy, the playfulness and the overall storybook aesthetic. They are all elements that represent either the blogger or the blog itself and are inspired by nature. </p>
+            <p>These minor illustrations will also be used for smaller social media highlights due to their small size. Their design style was kept in line with the primary characters (see above).</p>"
     },
     {
         name: "text-block",
@@ -179,8 +178,9 @@ flexibleLayout: [
             ]
         },
         content: 
-            "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis mi et sapien luctus pharetra. Sed et diam in sem tempus viverra non vel enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam quis vulputate diam.</p>            
-            <p>Suspendisse potenti. Aliquam rhoncus purus eget ipsum venenatis, eget venenatis nulla aliquam. Vivamus finibus, metus non pellentesque ornare, turpis urna eleifend mi, a suscipit sem massa et ligula. Suspendisse sit amet libero at urna blandit molestie at sit amet risus.</p>"
+            "<p>Three brand patterns were designed for the blog, however for website purposes, only the first one was used (in two of the colour pairings) as aesthetically, it looked more cohesive. However, should the brand ever expand into other areas (including analogue areas) they have the choice of using the other brand patterns.</p>
+            
+            "
     },
     {
         name: "full-width-image",
