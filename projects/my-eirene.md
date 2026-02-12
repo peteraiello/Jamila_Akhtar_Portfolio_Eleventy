@@ -6,8 +6,8 @@ tags: project
 specializations: ["Branding"]
 excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
 posttype: "project"
-startDate: 2025-01-15
-endDate: 2025-03-15
+startDate: 2021-03-00
+endDate: 2024-04-00
 thumbnail:
     src: "/images/projects/my_eirene.png"
     altText: "My Eirene thumbnail"

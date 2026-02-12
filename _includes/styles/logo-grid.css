@@ -27,19 +27,12 @@ section.logo-grid .item {
 }
 
 section.logo-grid .item .logo-grid__title {
+    font-family: "marine-up", sans-serif;
+    font-weight: 900;
     margin-top: 0.5rem;
     top: 0;
     position: absolute;
-    text-transform: uppercase;
 }
-
-/*
-    first-full 
-    mid-left
-    mid-right
-    bottom-left
-    bottom-right
-*/
 
 section.logo-grid .item.first-full {
     border-width: 3px 3px 0px 3px;

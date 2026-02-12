@@ -6,8 +6,8 @@ tags: project
 specializations: ["Illustrations", "Graphics"]
 excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
 posttype: "project"
-startDate: 2025-01-15
-endDate: 2025-03-15
+startDate: 2018-11-00
+endDate: 2019-04-00
 thumbnail: 
     src: '/images/projects/sandancer.png'
     altText: 'Sandancer thumbnail image'

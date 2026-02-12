@@ -6,13 +6,13 @@ tags: project
 specializations: ["Branding", "Graphics"]
 excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
 posttype: "project"
-startDate: 2025-01-15
-endDate: 2025-12-15
+startDate: 2025-01-00
+endDate: 2025-12-00
 thumbnail: 
     src: "/images/projects/darjeeling.png"
     altText: "Darjeeling days"
 headerImage: 
-    src: "/images/projects/darjeeling/dd-header.jpg"
+    src: "/images/projects/darjeeling/darjeeling-project__header.png"
     altText: "Branding for darjeeling days"
 location: "Ottawa, Canada"
 brandSwatches: [

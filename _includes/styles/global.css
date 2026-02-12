@@ -301,6 +301,7 @@ a.button-primary:hover {
 
 a.filter-button,
 button.filter-button {
+    font-family: "marine-up", sans-serif;
     cursor: pointer;
     white-space: nowrap;
     font-weight: 900;
@@ -315,6 +316,11 @@ button.filter-button {
     border: 0.125rem solid var(--tertiary-offset);
 }
 
+button.filter-button:hover {
+    color: var(--tertiary-color);
+    background-color: var(--tertiary-offset);
+}
+
 button.form-button {
     font-size: 1rem;
     cursor: pointer;
@@ -326,9 +332,4 @@ button.form-button {
     border-radius: 0.5rem;
     padding: calc(5 / 16 * 1rem) calc(27 / 16 * 1rem);
     background-color: transparent;
-}
-
-button.filter-button:hover {
-    color: var(--tertiary-color);
-    background-color: var(--tertiary-offset);
 }

@@ -1,4 +1,4 @@
-<section class="project-header">
+<section class="project-header bg-white">
     <div class="container">
         <div class="grid">
             <div class="col-span-12">
@@ -46,7 +46,7 @@
                 {% if brandSwatches %}
                     <ul class="article-header__swatches">
                         {%- for swatch in brandSwatches -%}
-                            <li class="article-header__swatch {% if swatch === "#F7F5F5" %}w-border{% endif %}" style="background-color: {{swatch}}">
+                            <li class="article-header__swatch {% if swatch === "#F7F5F5" or swatch === "#EEEEF0" %}w-border{% endif %}" style="background-color: {{swatch}}">
                                 <span class="visually-hidden">{{ ("swatch hex code: " + swatch) }}</span>
                             </li>
                         {%- endfor -%}
