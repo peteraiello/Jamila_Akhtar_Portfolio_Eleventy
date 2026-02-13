@@ -25,7 +25,9 @@
                             <p>{{env.production + '/thank-you/'}}</p>                
                         {% endif %}
 
-                        <p>{{env.environment}}</p>
+
+                        <p>environment {{env.environment}}</p>
+                        <p>vercel: {{process.env.VERCEL_ENV}}</p>
 
                         <!-- Full name -->
                         <div class="form-field-wrap">
