@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "eleventy --serve --port=8080 --watch",
-    "build": "eleventy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "MY_ENVIRONMENT=localhost npx @11ty/eleventy --serve --quiet",
+    "build:dev": "MY_ENVIRONMENT=development npx @11ty/eleventy",
+    "build:prod": "MY_ENVIRONMENT=production npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,7 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-img": "^6.0.4",
+    "dotenv": "^17.3.1",
     "moment": "^2.30.1"
   }
 }

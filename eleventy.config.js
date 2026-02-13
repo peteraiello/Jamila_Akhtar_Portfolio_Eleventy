@@ -1,15 +1,15 @@
 import markdownIt from "markdown-it"
 import moment from "moment";
-
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 export default function(eleventyConfig) {
+
     let options = {
         html: true, 
         breaks: true,
         linkify: true
     };
-
+    
     eleventyConfig.addPassthroughCopy("bundle.css");
     eleventyConfig.addPassthroughCopy("images/favicon/*");
     eleventyConfig.addPassthroughCopy("scripts");
