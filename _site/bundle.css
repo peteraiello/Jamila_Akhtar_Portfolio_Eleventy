@@ -779,6 +779,7 @@ section.hero.theme-experience .hero-meta-wrapper {
 }
 
 section.hero.theme-experience .hero-image-wrapper {
+    transform: rotate(-15deg);
     grid-column-start: 1;
     grid-column-end: 12;
     @media (width >= 48rem) {
