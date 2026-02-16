@@ -80,6 +80,10 @@ header.main-header {
     border: 0;
     background: transparent;
     width: 50px;
+    background-image: url("images/mobile-menu-button.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .mobile-menu-wrapper {
@@ -114,7 +118,7 @@ header.main-header {
 }
 
 .mobile-menu-navigation ul li a {
-    color: var(--secondary-color);
+    color: var(--tertiary-offset);
     font-size: calc(22 / 16 * 1rem);
     text-decoration: none;
 }

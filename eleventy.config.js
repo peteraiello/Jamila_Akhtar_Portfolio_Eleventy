@@ -12,6 +12,7 @@ export default function(eleventyConfig) {
     
     eleventyConfig.addPassthroughCopy("bundle.css");
     eleventyConfig.addPassthroughCopy("images/favicon/*");
+    eleventyConfig.addPassthroughCopy("images/mobile-menu-button.svg");
     eleventyConfig.addPassthroughCopy("scripts");
     
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
