@@ -79,7 +79,7 @@ flexibleLayout: [
     {
         name: "full-width-image",
         fullImage: {
-            src: "/images/projects/darjeeling/swatches.jpg",
+            src: "/images/projects/sandancer/sandancer-brand.png",
             altText: "Brand swatches" 
         }
     },

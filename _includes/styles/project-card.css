@@ -21,7 +21,6 @@ section.bg-secondary article.theme-secondary {
     border: 3px solid var(--highlight-color);
 }
 
-
 article.theme-secondary .project-card__title {
     color: var(--secondary-color);
 }

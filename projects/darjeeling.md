@@ -154,9 +154,9 @@ flexibleLayout: [
         signposts: {
             columns: 3,
             items: [
-                {title: "Wolf: connection + adventure", img: {src: "/images/projects/darjeeling/dd-wolf.svg", altText: "wolf illustration"}},
-                {title: "Bear: Wisdom + Cosiness", img: {src: "/images/projects/darjeeling/dd-bear.svg", altText: "bear illustration"}},
-                {title: "Otter: Creativity + Play", img: {src: "/images/projects/darjeeling/dd-otter.svg", altText: "otter illustration"}}
+                {title: "Wolf: connection + adventure", img: {src: "/images/projects/darjeeling/dd-wolf.svg", altText: "wolf illustration", aspectRatio: "square"}},
+                {title: "Bear: Wisdom + Cosiness", img: {src: "/images/projects/darjeeling/dd-bear.svg", altText: "bear illustration", aspectRatio: "square"}},
+                {title: "Otter: Creativity + Play", img: {src: "/images/projects/darjeeling/dd-otter.svg", altText: "otter illustration", aspectRatio: "square"}}
             ]
         },
         content: 
@@ -170,12 +170,12 @@ flexibleLayout: [
         signposts: {
             columns: 6,
             items: [
-                {img: {src: "/images/projects/darjeeling/dd-flower.svg", altText: "sunflower illustration"}},
-                {img: {src: "/images/projects/darjeeling/dd-star.svg", altText: "star illustration"}},
-                {img: {src: "/images/projects/darjeeling/dd-ivy.svg", altText: "ivy illustration"}},
-                {img: {src: "/images/projects/darjeeling/dd-flower-2.svg", altText: "flower illustration"}},
-                {img: {src: "/images/projects/darjeeling/dd-fern.svg", altText: "fern illustration"}},
-                {img: {src: "/images/projects/darjeeling/dd-bolt.svg", altText: "bolt illustration"}}
+                {img: {src: "/images/projects/darjeeling/dd-flower.svg", altText: "sunflower illustration", aspectRatio: "square"}},
+                {img: {src: "/images/projects/darjeeling/dd-star.svg", altText: "star illustration", aspectRatio: "square"}},
+                {img: {src: "/images/projects/darjeeling/dd-ivy.svg", altText: "ivy illustration", aspectRatio: "square"}},
+                {img: {src: "/images/projects/darjeeling/dd-flower-2.svg", altText: "flower illustration", aspectRatio: "square"}},
+                {img: {src: "/images/projects/darjeeling/dd-fern.svg", altText: "fern illustration", aspectRatio: "square"}},
+                {img: {src: "/images/projects/darjeeling/dd-bolt.svg", altText: "bolt illustration", aspectRatio: "square"}}
             ]
         },
         content: 

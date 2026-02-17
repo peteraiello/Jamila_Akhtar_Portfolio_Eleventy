@@ -64,16 +64,31 @@ section.logo-grid .item.bottom-left {
     }
 }
 
+section.logo-grid .item.is-logomark {
+    @media (min-width: 0) and (max-width: 48rem) {
+        order: 1;
+        border-width: 0px 3px 3px 3px;
+        border-bottom-left-radius: calc(30 / 16 * 1rem);
+        border-bottom-right-radius: calc(30 / 16 * 1rem); 
+    }
+}
+
 section.logo-grid .item.bottom-right {
-    border-width: 0px 3px 3px 3px;
-    border-bottom-left-radius: calc(30 / 16 * 1rem);
-    border-bottom-right-radius: calc(30 / 16 * 1rem);
     @media (width >= 48rem) {
         border-width: 0 3px 3px 0; 
         border-bottom-left-radius: 0;
         border-bottom-right-radius: calc(30 / 16 * 1rem);
     }
 }
+
+section.logo-grid .item:last-of-type {
+    @media (min-width: 0) and (max-width: 48rem) {
+        border-width: 0px 3px 3px 3px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
 
 section.logo-grid .logo-wrapper {
     display: flex;

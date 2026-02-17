@@ -45,4 +45,9 @@ section.text-block article.signpost .signpost-logo-wrapper {
 
 section.text-block article.signpost .signpost-logo-wrapper img {
     width: 100%;
+    height: auto;
+}
+
+section.text-block article.signpost .signpost-logo-wrapper.aspect-ratio-square img {
+    aspect-ratio: 1 / 1;
 }
