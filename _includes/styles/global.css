@@ -299,8 +299,8 @@ a.button-primary:hover {
     background-color: var(--secondary-color);
 }
 
-button.button-tertiary, 
-a.button-tertiary {
+button.button-tertiary.w-border, 
+a.button-tertiary.w-border {
     border: 3px solid var(--tertiary-offset);
 }
 

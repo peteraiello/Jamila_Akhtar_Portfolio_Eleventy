@@ -16,10 +16,10 @@
                     <div class="image-text__content body-lead">
                         {{ imageTextBlurb | safe }}
                     </div>
-                {% endif %}            
+                {% endif %}  
                 {% if imageTextButton.link %}
                     <div class="button-wrapper">
-                        <a href="{{ imageTextButton.link }}" class="{{ "button button-tertiary button-" + (button.backgroundColour or "secondary") }}">{{ imageTextButton.text }}</a>
+                        <a href="{{ imageTextButton.link }}" class="{{ "button button-" + (imageTextButton.backgroundColour or "secondary") }}{% if imageTextButton.border %} w-border{% endif %}">{{ imageTextButton.text }}</a>
                     </div>
                 {% endif %}
                 {% if imageTextButtons %}

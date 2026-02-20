@@ -32,6 +32,8 @@ imageText:
     button: 
         text: "Discover more"
         link: "/about"
+        backgroundColour: "tertiary"
+        border: false
     leftToRight: true
 quickLinks: 
     title: ""
