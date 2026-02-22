@@ -87,8 +87,8 @@ header.main-header {
     position: absolute;
     width: 100%;
     display: none;
-    padding: calc(24 / 16 * 1rem) 0 calc(28 / 16 * 1rem) 0;
     background-color: var(--tertiary-color);
+    padding: calc(24 / 16 * 1rem) 0 calc(28 / 16 * 1rem) 0;
 }
 
 .mobile-menu-wrapper.mobile-menu-active {
@@ -99,6 +99,7 @@ header.main-header {
 @media (width >= 64rem) { 
     .mobile-menu-wrapper {
         display: none;
+        padding: 0;
     }
 }
 

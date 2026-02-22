@@ -20,7 +20,6 @@ const headerScript = () => {
                     mobileMenu.classList.add(mobileMenuActiveClass);
                 }
             }      
-            console.log("e", e.target);
         }
         {/* Add a global event listener */}
         document.addEventListener("click", handleClick);

@@ -53,7 +53,6 @@ section.image-text.right-to-left .image-text-image-column .image-text-image__wra
 }
 
 section.image-text .image-text-image-column .image-text-image__wrapper.image-text-orientation__portrait {
-    /* aspect-ratio: 285 / 380; */
     overflow: hidden;
 } 
 
@@ -95,8 +94,6 @@ section.theme-project .image-text-text-column .image-text__title {
 section.image-text.bg-white .image-text-text-column .image-text__title {
     color: var(--dark);
 }
-
-
 
 section.image-text .image-text-image-column .image-text-image__wrapper img {
     width: 100%;
@@ -147,12 +144,14 @@ section.image-text .image-text-text-column {
     }
 }
 
-section.image-text.left-to-right .image-text-image-column {
-    grid-column: span 12;
+section.image-text.theme-home.left-to-right .image-text-image-column {
+    grid-column: span 8;
     @media (width >= 48rem) {
         grid-column: span 4;
     }
 }
+
+
 
 section.image-text.has-graphic .image-text-text-column {
     grid-column: span 12;
