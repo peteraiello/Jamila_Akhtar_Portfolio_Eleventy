@@ -119,15 +119,20 @@ section.resume .button-wrapper {
     margin-top: calc(40 / 16 * 1rem);
     justify-content: center;
     display: flex;
+    flex-direction: column;
     gap: 1rem;
-    flex-direction: row;
     margin-top: calc(40 / 16 * 1rem);
     @media (width >= 48rem) { 
+        flex-direction: row;
         margin-top: calc(90 / 16 * 1rem);
     }
     @media (width >= 64rem) { 
         margin-top: calc(140 / 16 * 1rem);
     }
+}
+
+section.resume .button-wrapper .wrapper {
+    display: flex;
 }
 
 section.resume .resume-wrapper {

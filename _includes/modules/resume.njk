@@ -137,7 +137,9 @@
     {% if resume.sectionButtons %}
         <div class="button-wrapper">
             {%- for button in resume.sectionButtons -%}
+                <span class="wrapper">
                     <a href="{{button.link}}" class="button button-primary w-border" target="_blank">{{ button.label}}</a>
+                </span>
             {%- endfor -%}  
         </div>
     {% endif %}

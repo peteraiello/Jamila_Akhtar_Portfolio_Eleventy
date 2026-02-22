@@ -90,9 +90,7 @@ flexibleLayout: [
         name: "text-block", 
         title: "Colourways",
         content: 
-            "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis mi et sapien luctus pharetra. Sed et diam in sem tempus viverra non vel enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam quis vulputate diam. </p>
-            
-            <p>Suspendisse potenti. Aliquam rhoncus purus eget ipsum venenatis, eget venenatis nulla aliquam. Vivamus finibus, metus non pellentesque ornare, turpis urna eleifend mi, a suscipit sem massa et ligula. Suspendisse sit amet libero at urna blandit molestie at sit amet risus.</p>"
+            "<p>The colour palette was pretty simple to compose, considering the art was based off a beach-side sunset, which meant a lot of blue-green hues that were balanced out by yellows and oranges, even merged at points to create soft peaches and rose pinks to really encapsulate the sky at sunset. The selected colours helped convey the nostalgic tone we were going for.</p>"
     },
     {
         name: "full-width-image",

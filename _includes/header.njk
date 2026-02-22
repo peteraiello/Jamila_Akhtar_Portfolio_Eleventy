@@ -11,9 +11,9 @@
                 <span class="visually-hidden">menu open</span>
             </button>
             <nav class="desktop-navigation" aria-label="Main navigation">
-                <ul>
+                <ul class="nav">
                     {%- for link in header.nav -%}
-                        <li>
+                        <li class="nav-link">
                             <a href="{{link.link}}" class="nav-item{% if link.isActive %} is-active{% endif %}">{{ link.label }}</a>
                         </li>
                     {%- endfor -%}

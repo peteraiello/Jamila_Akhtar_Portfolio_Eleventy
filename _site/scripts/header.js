@@ -1,15 +1,12 @@
 
 
 const headerScript = () => {    
-
     document.addEventListener('DOMContentLoaded', () => {
-
         const body = document.querySelector('body');
         const mobileMenu = body.querySelector(".mobile-menu-wrapper");
         const mobMenuBtn = body.querySelector(".mobile-menu-button");
         const mobileMenuClass = "mobile-menu-button";
         const mobileMenuActiveClass = "mobile-menu-active";
-
         const handleClick = (e) => {
             e.stopPropagation();
             const target = e.target;
@@ -23,6 +20,7 @@ const headerScript = () => {
                     mobileMenu.classList.add(mobileMenuActiveClass);
                 }
             }      
+            console.log("e", e.target);
         }
         {/* Add a global event listener */}
         document.addEventListener("click", handleClick);
