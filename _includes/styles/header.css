@@ -26,10 +26,7 @@ header.main-header {
 
 .nav-wrapper nav {
     display: none;
-}
-
-@media (width >= 64rem) {
-    .nav-wrapper nav {
+    @media (width >= 64rem) {
         display: flex;
         align-items: center;
     }
@@ -112,6 +109,9 @@ header.main-header {
     list-style: none;
     margin: 0;
     padding: 0;
+    @media (width >= 64rem) {
+        display: none;
+    }
 }
 
 .mobile-menu-navigation ul li {
