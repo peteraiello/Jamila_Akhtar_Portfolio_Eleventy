@@ -1,7 +1,7 @@
 --- 
 layout: "/layout/home.njk"
 title: "Home"
-description: "Welcome to my portfolio! I'm an Ottawa based designer specializing in branding and graphics, with a background in interior design"
+description: "You've arrived at the portfolio of Jamila; Ottawa-based designer and illustrator for the whimsically adventurous looking for something off the beaten track."
 header: 
     logo: 
         src: "/images/logo.svg"
