@@ -1,7 +1,7 @@
 --- 
 layout: "/layout/portfolio.njk"
 title: "Portfolio"
-description: "Check out so of my work in branding, graphics and illustration."
+description: "You've come to the right place. This is the right place to check out all the cool things I've been creating!"
 header: 
     logo: 
         src: "/images/logo.svg"
