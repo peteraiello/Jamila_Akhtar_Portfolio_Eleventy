@@ -13,7 +13,8 @@ header:
         {label: "Contact", link: "/contact"}
     ]
 hero: 
-    title: "My <br />Portfolio"
+    title: "Portfolio"
+    strapline: "You've struck gold! This is the spot where all the cool stuff I've created dwells. Enjoy the loot!"
     image: 
         src: "/images/hero/portfolio-soda-can.svg"
         altText: "Illustration of a cat next to a vase"

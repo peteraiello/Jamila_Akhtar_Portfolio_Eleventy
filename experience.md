@@ -13,11 +13,11 @@ header:
         {label: "Contact", link: "/contact"}
     ]
 hero: 
-    title: "My Experience"
+    title: "Experience"
+    strapline: "All the technical background info"
     image: 
         src: "/images/hero/watering-can.svg"
         altText: "Illustration of a cat next to a vase"
-    strapline: ""
     theme: "experience"
     backgroundColour: "secondary"
 resume: 

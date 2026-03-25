@@ -95,7 +95,6 @@ header.main-header {
     display: block;
 }
 
-
 @media (width >= 64rem) { 
     .mobile-menu-wrapper {
         display: none;

@@ -12,6 +12,13 @@ section.hero.theme-home {
     padding: 0;
 }
 
+section.hero .hero-meta-wrapper {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    justify-content: start;
+}
+
 section.hero.theme-home .hero-wrapper {
     position: relative;
     display: flex;
@@ -43,10 +50,21 @@ section.hero.theme-home .hero-wrapper .hero-background-image {
 }
 
 section.hero.theme-home .hero-wrapper .hero-meta-wrapper {
+    display: flex;
+    flex-direction: column;
     order: 1;
     padding: calc(90 / 16 * 1rem) 0;
     @media (width >= 48rem) { 
         padding: calc(140 / 16 * 1rem) 0;
+    }
+}
+
+section.hero .hero-meta-wrapper p.hero-strapline {
+    font-family: "marine-oblicua";
+    margin: 0;
+    display: none;
+    @media (width >= 40rem) { 
+        display: block;
     }
 }
 
@@ -91,21 +109,14 @@ section.hero.theme-portfolio .hero-meta-wrapper {
     display: flex;
     grid-column-start: 7;
     grid-column-end: 12;
-    @media (width >= 48rem) { 
-        justify-content: end;
-        align-items: end;
-        grid-column-start: 6;
-        grid-column-end: 11;
-    }
 } 
 
-section.hero.theme-portfolio .hero-meta-wrapper .hero-title,
-section.hero.theme-home .hero-meta-wrapper .hero-title {
-    text-align: right;
+section.hero.theme-portfolio .hero-meta-wrapper .hero-title {
+    text-align: left;
 }
 
-section.hero.theme-portfolio .hero-meta-wrapper .hero-title {
-    align-self: flex-end;
+section.hero.theme-home .hero-meta-wrapper .hero-title {
+    text-align: right;
 }
 
 section.hero.theme-portfolio .hero-image-wrapper {
@@ -171,7 +182,6 @@ section.hero.theme-experience .hero-meta-wrapper .hero-title {
 
 section.hero.theme-experience .hero-meta-wrapper {
     display: flex;
-    align-items: end;
     grid-column-start: 1;
     grid-column-end: 6;
     @media (width >= 48rem) { 
@@ -182,9 +192,14 @@ section.hero.theme-experience .hero-meta-wrapper {
 
 
 section.hero.theme-experience .hero-image-wrapper {
-    transform: rotate(-15deg);
     grid-column-start: 7;
-    grid-column-end: 12;
+    grid-column-end: 11;
+    transform: translateX(0px);
+    @media (width >= 40rem) {
+        transform: translateX(100px);
+        grid-column-start: 6;
+        grid-column-end: 11;
+    }
 }
 
 

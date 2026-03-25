@@ -12,8 +12,8 @@
                         <h1 class="hero-title heading-xl">{{ hero.title | safe }}</h1>
                     {% endif %}
                     {% if hero.strapline %}
-                        <div class="hero-strapline">
-                            <p>{{ hero.strapline }}</p>
+                        <div class="hero-strapline-wrapper">
+                            <p class="hero-strapline heading-sm">{{ hero.strapline }}</p>
                         </div>
                     {% endif %}
                 </div>
