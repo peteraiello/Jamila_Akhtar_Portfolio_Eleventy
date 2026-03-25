@@ -66,6 +66,11 @@ h6 {
     font-size: clamp(1.25rem, 4vw, 1.5rem);
 }
 
+/* font size 14px */
+.text-sm {
+    font-size: calc(14 / 16 * 1rem);
+}
+
 /* heading 45px */
 .featured-projects__title {
     font-size: clamp(1.45rem, 4vw, 2.813rem);
@@ -255,7 +260,6 @@ a.button {
         padding: calc(10 / 16 * 1rem) calc(54 / 16 * 1rem);
     }
 }
- 
 
 button.button-tertiary,
 a.button-tertiary {
@@ -281,7 +285,6 @@ a.button-tertiary-offset:hover {
     background-color: var(--tertiary-color);
 }
 
-
 button.button-primary,
 a.button-primary {
     color: var(--secondary-color);
@@ -290,7 +293,9 @@ a.button-primary {
 
 button.button-primary.w-border,
 a.button-primary.w-border {
-    border: 3px solid var(--secondary-color);
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--secondary-color);
 }
 
 button.button-primary:hover,
@@ -301,7 +306,9 @@ a.button-primary:hover {
 
 button.button-tertiary.w-border, 
 a.button-tertiary.w-border {
-    border: 3px solid var(--tertiary-offset);
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--tertiary-offset);
 }
 
 a.filter-button,
@@ -339,6 +346,23 @@ button.form-button {
     background-color: transparent;
 }
 
+a.button.button-sm {
+    padding: 0;
+}
+
 .page-title {
     margin-bottom: 1rem;
+}
+
+a.button-sm {
+    font-family: "marine-up", sans-serif;
+    font-size: calc(20 / 16 * 1rem);
+    font-weight: 900;
+    padding: 0.25rem 1rem;
+    border-radius: calc(50 / 16 * 1rem);
+    text-decoration: none;
+}
+
+a.button-sm.w-border {
+    border-width: 2px;
 }

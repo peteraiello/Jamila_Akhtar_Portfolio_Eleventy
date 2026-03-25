@@ -3,13 +3,14 @@ layout: "/layout/project.njk"
 permalink: "/portfolio/sandancer/"
 title: "Sandancer EP"
 tags: project
-specializations: ["Illustrations", "Graphics"]
+industry: "music"
+specializations: ["Artwork", "Illustration", "Graphic Design"]
 excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
 posttype: "project"
 startDate: 2018-11-00
 endDate: 2019-04-00
 thumbnail: 
-    src: '/images/projects/sandancer.png'
+    src: '/images/projects/sandancer-thumb.jpg'
     altText: 'Sandancer thumbnail image'
 headerImage: 
     src: "/images/projects/sandancer/illustration-header.jpg"

@@ -1,22 +1,22 @@
-<section class="projects-wrapper">
+<section class="projects-wrapper bg-white">
     <div class="container-xl">        
         {% if projectsWrapper.title %}
             <h3 class="projects-wrapper__title">Portfolio</h3>
         {% endif %}
         <div class="projects-wrapper">
-            {# <div class="grid"> #}
-                {% if collections.projects %}
-                    {%- for project in collections.projects -%}
-                        {% set cardImage = project.data.thumbnail.src %}
-                        {% set cardImageAlt = project.data.thumbnail.altText %}
-                        {% set cardTitle = project.data.title %}
-                        {% set cardExcerpt = project.data.excerpt %}      
-                        {% set cardLink = project.data.permalink %}
-                        {% set cardTheme = project.data.theme %}   
-                        {% include "../components/card.njk" %}
-                    {%- endfor -%}    
-                {% endif %}
-            {# </div> #}
+            {% if collections.projects %}
+                {%- for project in collections.projects -%}
+                    {% set cardImage = project.data.thumbnail.src %}
+                    {% set cardImageAlt = project.data.thumbnail.altText %}
+                    {% set cardTitle = project.data.title %}
+                    {% set cardTags = project.data.specializations %}
+                    {% set cardIndustry = project.data.industry %}
+                    {% set cardExcerpt = project.data.excerpt %}      
+                    {% set cardLink = project.data.permalink %}
+                    {% set cardTheme = project.data.theme %}   
+                    {% include "../components/card.njk" %}
+                {%- endfor -%}    
+            {% endif %}
         </div>     
     </div>
 </section> 

@@ -1,18 +1,27 @@
-<article class="project-card {{ "theme-" + (cardTheme or "tertiary-offset") }}">
+<article class="project-card">
     {% if cardImage %}
         <div class="project-card-image__wrapper">
             <img src="{{ cardImage }}" alt="{{ cardImageAlt }}" class="project-card__image" />
         </div>
     {% endif %}
-    {% if cardTitle %}
-        <h3 class="project-card__title heading-sm">{{cardTitle}}</h3>
-    {% endif %}
-    {% if cardExcerpt %}
-        <p class="project-card__excerpt">{{cardExcerpt}}</p>
-    {% endif %}
-    {% if cardLink %}
-        <div class="button-wrapper">
-            <a href="{{ cardLink }}" class="button button-tertiary">{{ "View Project" }}</a>
-        </div>
-    {% endif %}
+    <div class="project-card__meta">
+        {% if cardTitle %}
+            <h3 class="project-card__title heading-sm">{{cardTitle}}</h3>
+        {% endif %}
+        {% if cardIndustry %}
+            <p class="card-industry text-sm">{{cardIndustry}}</p>
+        {% endif %}
+        {% if cardTags %}
+            <ul class="card-tags__wrapper">
+                {%- for tag in cardTags -%}
+                    <li class="card-tag text-sm">{{tag}}</li>
+                {%- endfor -%}
+            </ul>
+        {% endif %}
+        {% if cardLink %}
+            <div class="button-wrapper">
+                <a href="{{ cardLink }}" class="button-sm button-primary w-border">{{ "Check me out!" }}</a>
+            </div>
+        {% endif %}
+    </div>
 </article>

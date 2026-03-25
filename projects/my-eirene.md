@@ -3,13 +3,14 @@ layout: "/layout/project.njk"
 permalink: "/portfolio/my-eirene/"
 title: "MyEirene Ltd"
 tags: project
-specializations: ["Branding"]
+industry: "health + wellness"
+specializations: ["Brand Kit", "Brand Identity", "Graphic Design"]
 excerpt: "A branding and graphic project for a brand new creative blog that has recently been set up."
 posttype: "project"
 startDate: 2021-03-04
 endDate: 2024-05-02
 thumbnail:
-    src: "/images/projects/my_eirene.png"
+    src: "/images/projects/my-eirene-thumb.jpg"
     altText: "My Eirene thumbnail"
 headerImage: 
     src: "/images/projects/my_eirene/my-eirene.png"
