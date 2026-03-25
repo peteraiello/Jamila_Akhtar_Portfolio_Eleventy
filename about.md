@@ -14,6 +14,7 @@ header:
     ]
 hero: 
     title: "About Me"
+    strapline: "Discover my story and get to know a little bit more about me"
     theme: "about"
     image: 
         src: "/images/hero/flower-pot.svg"

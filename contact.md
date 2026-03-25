@@ -13,7 +13,8 @@ header:
         {label: "Contact", link: "/contact", isActive: true}
     ]
 hero: 
-    title: "Contact </br>Me"
+    title: "Contact"
+    strapline: "If you have a project in mind or simply have a query, fill out the form below to get in touch!"
     image: 
         src: "/images/hero/creative_battery.svg"
         altText: "Illustration of a cat next to a vase"
