@@ -17,7 +17,7 @@ html {
     --light-gray: #FFFAFA;
     --white: #ffffff;
     --dark: #282828;
-    --black: #000000;
+    --black: #191919;
     --small: 40rem;
     --medium: 48rem;
     --large: 64rem;
@@ -285,12 +285,14 @@ a.button-tertiary-offset:hover {
     background-color: var(--tertiary-color);
 }
 
+span.button-primary,
 button.button-primary,
 a.button-primary {
     color: var(--secondary-color);
     background-color: var(--primary-color);
 }
 
+span.button-primary.w-border,
 button.button-primary.w-border,
 a.button-primary.w-border {
     border-width: 3px;
@@ -354,7 +356,7 @@ a.button.button-sm {
     margin-bottom: 1rem;
 }
 
-a.button-sm {
+span.button-sm {
     font-family: "marine-up", sans-serif;
     font-size: calc(20 / 16 * 1rem);
     font-weight: 900;
@@ -363,6 +365,6 @@ a.button-sm {
     text-decoration: none;
 }
 
-a.button-sm.w-border {
+span.button-sm.w-border {
     border-width: 2px;
 }

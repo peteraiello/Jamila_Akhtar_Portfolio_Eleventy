@@ -285,7 +285,7 @@ html {
     --light-gray: #FFFAFA;
     --white: #ffffff;
     --dark: #282828;
-    --black: #000000;
+    --black: #191919;
     --small: 40rem;
     --medium: 48rem;
     --large: 64rem;
@@ -553,12 +553,14 @@ a.button-tertiary-offset:hover {
     background-color: var(--tertiary-color);
 }
 
+span.button-primary,
 button.button-primary,
 a.button-primary {
     color: var(--secondary-color);
     background-color: var(--primary-color);
 }
 
+span.button-primary.w-border,
 button.button-primary.w-border,
 a.button-primary.w-border {
     border-width: 3px;
@@ -622,7 +624,7 @@ a.button.button-sm {
     margin-bottom: 1rem;
 }
 
-a.button-sm {
+span.button-sm {
     font-family: "marine-up", sans-serif;
     font-size: calc(20 / 16 * 1rem);
     font-weight: 900;
@@ -631,7 +633,7 @@ a.button-sm {
     text-decoration: none;
 }
 
-a.button-sm.w-border {
+span.button-sm.w-border {
     border-width: 2px;
 }
 
@@ -1203,8 +1205,31 @@ article.quick-link-card .image-wrapper {
     }
 }
 
+a.project-card-link {
+    display: flex;
+    gap: calc(10 / 16 * 1rem);
+    flex-direction: column;
+    text-decoration: none;
+}
+
+section.bg-white a.project-card-link {
+    transition: all ease-in-out 300ms;
+    color: var(--black);
+}
+
+section.bg-white a.project-card-link:hover > article {
+    transition: all ease-in-out 300ms;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+section.bg-white a.project-card-link:hover > article ul.card-tags__wrapper li.card-tag {
+    border-color: var(--white);
+}
+
 article.project-card {
     --border-width: 2px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -1216,7 +1241,7 @@ section.projects-wrapper.bg-white {
 }
 
 section.projects-wrapper article.project-card {
-    border: 2px solid #191919;
+    border: 2px solid var(--black);
 }
 
 article.theme-secondary .project-card__title {
@@ -1231,7 +1256,7 @@ article.project-card .project-card-image__wrapper > img.project-card__image {
     width: 100%;
     height: 100%;
     aspect-ratio: 387 / 310;
-    border-bottom: var(--border-width) solid #191919;
+    border-bottom: var(--border-width) solid var(--black);
 }
 
 article.project-card .project-card__meta {
@@ -1268,13 +1293,8 @@ article.project-card .project-card__meta ul.card-tags__wrapper {
 article.project-card .project-card__meta ul.card-tags__wrapper li {
     padding: 4px 18px;
     border-radius: 50px;
-    border: 1px solid #191919;
+    border: 1px solid var(--black);
 }
-
-
-
-
-
 
 
 section.resume h3.resume-title {
