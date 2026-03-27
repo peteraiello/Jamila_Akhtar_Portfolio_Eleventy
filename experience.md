@@ -135,10 +135,6 @@ resume:
         {
             label: "Download my CV",
             link: "/images/uploads/jamila_akhtar_resume.pdf"
-        },
-        {
-            label: "Download my Portfolio",
-            link: "/images/uploads/jamila_akhtar_portfolio.pdf"
         }
     ]
 featuredProjects: 

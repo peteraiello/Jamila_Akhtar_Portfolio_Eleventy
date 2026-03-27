@@ -38,6 +38,55 @@ h6 {
     font-style: normal;
 }
 
+.spacer-xxs {
+    margin-bottom: calc(10 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        margin-bottom: calc(20 / 16 * 1rem);
+    }
+}
+
+.spacer-xs {
+    margin-bottom: calc(20 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        margin-bottom: calc(40 / 16 * 1rem);
+    }
+}
+
+.spacer-sm {
+    margin-bottom: calc(25 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        margin-bottom: calc(50 / 16 * 1rem);
+    }
+}
+
+.spacer-md {
+    margin-bottom: calc(30 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        margin-bottom: calc(60 / 16 * 1rem);
+    }
+}
+
+.spacer-lg {
+    margin-bottom: calc(32.5 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        margin-bottom: calc(75 / 16 * 1rem);
+    }
+}
+
+.spacer-xl {
+    margin-bottom: calc(50 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        margin-bottom: calc(100 / 16 * 1rem);
+    }
+}
+
+.spacer-xxl {
+    margin-bottom: calc(60 / 16 * 1rem);
+    @media (width >= 48rem) { 
+        margin-bottom: calc(120 / 16 * 1rem);
+    }
+}
+
 .text-heading {
     font-family: "rl-aqva", sans-serif;
 }
