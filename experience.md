@@ -142,10 +142,11 @@ resume:
         }
     ]
 featuredProjects: 
-    title: "Check Out My Projects"
+    title: "<span>Check out the </span>Cool Stuff"
     projects: ["Those Darjeeling Days", "MyEirene Ltd", "Sandancer EP"]
-    backgroundColour: "secondary"
+    backgroundColour: "black"
     cardTheme: "secondary"
+    buttonTheme: "secondary"
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"

@@ -182,7 +182,7 @@ form textarea {
     transition: all 200ms ease-in-out;
 }
 
-main.page section {
+main section {
     padding: calc(30 / 16 * 1rem) 0;
     @media (width >= 48rem) {
         padding: calc(69 / 16 * 1rem) 0;
@@ -261,24 +261,35 @@ a.button {
     }
 }
 
+button.button-secondary, 
+span.button-secondary,
+a.button-secondary {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+span.button-tertiary,
 button.button-tertiary,
 a.button-tertiary {
     color: var(--tertiary-offset);
     background-color: var(--tertiary-color);
 }
 
+span.button-tertiary:hover,
 button.button-tertiary:hover,
 a.button-tertiary:hover {
     color: var(--white);
     background-color: var(--tertiary-offset);
 }
 
+span.button-tertiary-offset,
 button.button-tertiary-offset,
 a.button-tertiary-offset {
     color: var(--tertiary-color);
     background-color: var(--tertiary-offset);
 }
 
+span.button-tertiary-offset:hover,
 button.button-tertiary-offset:hover,
 a.button-tertiary-offset:hover {
     color: var(--tertiary-offset);
@@ -292,24 +303,29 @@ a.button-primary {
     background-color: var(--primary-color);
 }
 
+button.w-border, 
+span.w-border,
+a.w-border {
+    border-width: 3px;
+    border-style: solid;
+}
+
 span.button-primary.w-border,
 button.button-primary.w-border,
 a.button-primary.w-border {
-    border-width: 3px;
-    border-style: solid;
     border-color: var(--secondary-color);
 }
 
+span.button-primary:hover,
 button.button-primary:hover,
 a.button-primary:hover {
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
 
+span.button-tertiary.w-border, 
 button.button-tertiary.w-border, 
 a.button-tertiary.w-border {
-    border-width: 3px;
-    border-style: solid;
     border-color: var(--tertiary-offset);
 }
 

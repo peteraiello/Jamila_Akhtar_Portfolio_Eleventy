@@ -21,7 +21,7 @@
             {% endif %}
             {% if cardLink %}
                 <div class="button-wrapper">
-                    <span href="{{ cardLink }}" class="button-sm button-primary w-border">{{ "Check me out!" }}</span>
+                    <span href="{{ cardLink }}" class="{{ "button-" + (cardButtonTheme or "secondary") }} button-sm w-border">{{ "Check me out!" }}</span>
                 </div>
             {% endif %} 
         </div>

@@ -2,7 +2,7 @@
     <div class="container">
         {% if featuredProjects.title %}   
             <div class="featured-projects-title__wrapper">
-                <h3 class="featured-projects__title">{{ featuredProjects.title }}</h3>
+                <h3 class="featured-projects__title">{{ featuredProjects.title | safe }}</h3>
             </div>
         {% endif %}
         {% if collections.projects %}
@@ -11,9 +11,12 @@
                     {% set cardImage = project.data.thumbnail.src %}
                     {% set cardImageAlt = project.data.thumbnail.altText %}
                     {% set cardTitle = project.data.title %}
-                    {% set cardExcerpt = project.data.excerpt %}      
+                    {% set cardExcerpt = project.data.excerpt %}    
+                    {% set cardIndustry = project.data.industry %}
+                    {% set cardTags = project.data.specializations %}  
                     {% set cardLink = project.data.permalink %}
                     {% set cardTheme = featuredProjects.cardTheme %}
+                    {% set cardButtonTheme = featuredProjects.buttonTheme %}
                     {% if featuredProjects.projects %}
                         {% if cardTitle in (featuredProjects.projects) %}
                             {% include "../components/card.njk" %}
