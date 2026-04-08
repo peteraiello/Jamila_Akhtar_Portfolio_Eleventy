@@ -126,12 +126,14 @@ h6 {
 .gap-sm {gap: calc(6 / 16 * 1rem);}
 .gap-md {gap: calc(10 / 16 * 1rem);}
 .gap-lg {gap: calc(20 / 16 * 1rem);}
+.gap-xl {gap: calc(40 / 16 * 1rem);}
 @media (width >= 48rem) { 
     .gap-xxs {gap: calc(4 / 16 * 1rem);}
     .gap-xs {gap: calc(8 / 16 * 1rem);}
     .gap-sm {gap: calc(12 / 16 * 1rem);}
     .gap-md {gap: calc(20 / 16 * 1rem);}
     .gap-lg {gap: calc(40 / 16 * 1rem);}
+    .gap-xl {gap: calc(80 / 16 * 1rem);}
 }
 
 .visually-hidden {
@@ -364,23 +366,15 @@ button.form-button {
     background-color: transparent;
 }
 
-a.button.button-sm {
-    padding: 0;
-}
-
 .page-title {
     margin-bottom: 1rem;
 }
 
-span.button-sm {
-    font-family: "marine-up", sans-serif;
-    font-size: calc(20 / 16 * 1rem);
-    font-weight: 900;
-    padding: 0.25rem 1rem;
-    border-radius: calc(50 / 16 * 1rem);
-    text-decoration: none;
-}
-
-span.button-sm.w-border {
-    border-width: 2px;
+a.button-sm {
+    font-size: 1rem;
+    padding: calc(5 / 16 * 1rem) calc(12 / 16 * 1rem);
+    @media (width >= 40rem) { 
+        padding: calc(10 / 16 * 1rem) calc(18 / 16 * 1rem);
+        font-size: calc(18 / 16 * 1rem);
+    }
 }

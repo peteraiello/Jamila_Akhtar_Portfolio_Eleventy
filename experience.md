@@ -8,6 +8,7 @@ header:
         altText: "header logo"
     nav: [
         {label: "Portfolio", link: "/portfolio"},
+        {label: "Services", link: "/services"},
         {label: "Experience", link: "/experience", isActive: true},
         {label: "About", link: "/about"},
         {label: "Contact", link: "/contact"}

@@ -4,8 +4,9 @@ title: "FAQs"
 header: 
     nav: [
         {label: "Portfolio", link: "/portfolio"},
+        {label: "Services", link: "/services"},
         {label: "Experience", link: "/experience"},
-        {label: "About", link: "/about", isActive: true},
+        {label: "About", link: "/about"},
         {label: "Contact", link: "/contact"}
     ]
 footer: 

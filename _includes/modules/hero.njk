@@ -16,6 +16,23 @@
                             <p class="hero-strapline heading-sm">{{ hero.strapline }}</p>
                         </div>
                     {% endif %}
+                    {% if hero.ctaButtons %}
+                        <ul class="button-list">
+                            {%- for button in hero.ctaButtons -%}
+                                <li>
+                                    <span><a href="{{ button.link }}" class="button button-sm button-tertiary-offset w-border">{{ button.label }}</a></span>
+                                </li>
+                            {%- endfor -%}
+                        </ul>
+                    {% endif %}
+                    {%- for social in footer.footerSocial -%}
+                        <li class="{{ social.label }}"><a href="{{ social.link }}">
+                            <span>{{social.label}}</span></a>
+                        </li>
+                    {%- endfor -%}
+
+
+
                 </div>
                 {% if hero.image %}
                     <div class="hero-image-wrapper"> 

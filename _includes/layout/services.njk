@@ -1,0 +1,19 @@
+{% include "../head.njk" %}
+
+{% include "../header.njk" %}
+
+{% include "../modules/hero.njk" %}
+
+{% if imageTexts %}
+    {%- for block in imageTexts -%}
+        {% set imageText = block %}
+        {% include "../modules/imageText.njk" %}
+    {%- endfor -%}
+{% elif imageText %}
+    {# Backwards compatible: allow single imageText object #}
+    {% include "../modules/imageText.njk" %}
+{% endif %}
+
+{% include "../modules/resume.njk" %}
+
+{% include "../footer.njk" %}
