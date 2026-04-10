@@ -119,32 +119,34 @@ imageTexts:
                 "Packaging",
                 "UX UI Design (if required)",
             ],
-            includedDisclaimer: "*Your investment id dependent on project scope"
+            disclaimer: "*Your investment id dependent on project scope"
         }, 
         {
             title: "Book Covers",
             timeline: "3-6 weeks",
             blurb: "For authors with upcoming releases who want custom designed cover art. My style is best suited for books that have elements of play, whimsy and adventure, but I am open to any genre.",
             included: [
-            "Art Direction",
-            "Marketing Strategy",
-            "Custom Artwork",
-            "Typography",
-            "Colour Palette",
-            "Formatting + Composition"
-            ]
+                "Art Direction",
+                "Marketing Strategy",
+                "Custom Artwork",
+                "Typography",
+                "Colour Palette",
+                "Formatting + Composition"
+            ],
+            disclaimer: "*Your investment is dependent on project scope."
         },
         {
             title: "Magazine Art",
-            timeline: "2-3 weeks",
-            blurb: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+            timeline: "1-4 weeks",
+            blurb: "For magazine publishers looking for one-off art illustrations to be paired with a future article or for an upcoming issue cover. I take on both print and digital commissions.",
             included: [
                 "Concept",
                 "Art Direction",
                 "Custom Artwork",
                 "Typography",
                 "Formatting + Composition"
-            ]
+            ],
+            disclaimer: "*Your investment is dependent on project scope, as is the timeline."
         }
         ]
 featuredProjects: 

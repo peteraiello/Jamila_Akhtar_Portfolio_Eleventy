@@ -89,6 +89,9 @@
                                             {% endfor %}
                                         </ul>
                                     {% endif %}
+                                    {% if cta.disclaimer %}
+                                        <p>{{ cta.disclaimer }}</p>
+                                    {% endif %}
                                 </div>
                             {% elif cta.content %}
                                 <div class="content-wrapper">
