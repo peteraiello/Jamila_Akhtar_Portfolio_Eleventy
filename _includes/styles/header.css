@@ -76,11 +76,14 @@ header.main-header {
     border: 0;
     background: transparent;
     width: 50px;
-    background-image: url("images/mobile-menu-button.svg");
+    background-image: url("images/mobile_menu_flower_green_solid.svg");
+    /* background-image: url("images/mobile-menu-button.svg"); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
+
+
 
 .mobile-menu-wrapper {
     z-index: 100;

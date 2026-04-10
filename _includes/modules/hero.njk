@@ -11,6 +11,18 @@
                     {% if hero.title %}
                         <h1 class="hero-title heading-xl">{{ hero.title | safe }}</h1>
                     {% endif %}
+                    {% if hero.typewriter %}
+                        <div class="hero-typewriter">
+                            {%- for word in hero.typewriter -%}
+                                <span class="visually-hidden">{{ word }}</span>
+                            {%- endfor -%}
+                        </div>
+                    {% endif %}
+                    {% if hero.typewriter %}
+                        <div class="hero-typewriter-wrapper">
+                            <h2 class="typewriter-effect heading-xl"></h2>
+                        </div>
+                    {% endif %}
                     {% if hero.strapline %}
                         <div class="hero-strapline-wrapper">
                             <p class="hero-strapline heading-sm">{{ hero.strapline }}</p>
@@ -30,9 +42,6 @@
                             <span>{{social.label}}</span></a>
                         </li>
                     {%- endfor -%}
-
-
-
                 </div>
                 {% if hero.image %}
                     <div class="hero-image-wrapper"> 

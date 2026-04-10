@@ -77,11 +77,14 @@ header.main-header {
     border: 0;
     background: transparent;
     width: 50px;
-    background-image: url("images/mobile-menu-button.svg");
+    background-image: url("images/mobile_menu_flower_green_solid.svg");
+    /* background-image: url("images/mobile-menu-button.svg"); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
+
+
 
 .mobile-menu-wrapper {
     z-index: 100;
@@ -814,6 +817,12 @@ section.hero.theme-home .hero-strapline {
 section.hero.theme-home .hero-strapline p {
     margin: 0;
 }
+
+section.hero.theme-home .hero-typewriter-wrapper {
+    height: 77px;
+}
+
+
 
 section.hero.bg-secondary .hero-strapline,
 section.hero.bg-secondary .hero-title {
