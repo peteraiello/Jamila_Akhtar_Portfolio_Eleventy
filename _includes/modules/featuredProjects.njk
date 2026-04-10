@@ -2,7 +2,9 @@
     <div class="container">
         {% if featuredProjects.title %}   
             <div class="featured-projects-title__wrapper">
-                <h3 class="featured-projects__title">{{ featuredProjects.title | safe }}</h3>
+                <h3 class="featured-projects__title {{ "text-" + (featuredProjects.titleColour or "black") }}">
+                    {{ featuredProjects.title | safe }}
+                </h3>
             </div>
         {% endif %}
         {% if collections.projects %}

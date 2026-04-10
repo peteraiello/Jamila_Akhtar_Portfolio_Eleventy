@@ -1,4 +1,4 @@
-<section class="image-text {{ "theme-" + (imageText.theme or "post") }}{% if imageText.leftToRight === true %} left-to-right {% else %} right-to-left {% endif %}{{ "bg-" + (imageText.backgroundColour or "white") }}{% if imageText.graphic %} has-graphic{% endif%}">
+<section class="image-text {{ "theme-" + (imageText.theme or "post") }}{% if imageText.leftToRight === true %} left-to-right {% else %} right-to-left {% endif %}{{ "bg-" + (imageText.backgroundColour or "white") }}{% if imageText.graphic %} has-graphic{% endif%}" {% if imageText.sectionId %} id="{{ imageText.sectionId }}" {% endif %}>
     <div class="container">
         <div class="image-text-section__wrapper gap-xl">
             <div class="grid">

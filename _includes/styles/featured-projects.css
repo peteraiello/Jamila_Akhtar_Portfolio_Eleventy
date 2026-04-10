@@ -1,12 +1,12 @@
-main.experience section.featured-projects .featured-projects__title {
-    color: var(--tertiary-color);
-}
-
-main.experience section.featured-projects .featured-projects__title span {
+section.featured-projects .featured-projects__title {
     font-family: "marine-up", sans-serif;
     font-weight: 400;
 }
 
+section.featured-projects .featured-projects__title span {
+    font-family: "rl-aqva", sans-serif;
+    font-weight: 900;
+}
 
 section.featured-projects .featured-projects__title {
     text-align: center;

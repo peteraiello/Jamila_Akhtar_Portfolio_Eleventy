@@ -22,11 +22,12 @@ hero:
     theme: "services"
     backgroundColour: "secondary"
     ctaButtons: [
-        {label: "Branding", link: "/branding"},
-        {label: "Graphics + Illustration", link: "/graphics"}
+        {label: "Branding", link: "/services/#branding"},
+        {label: "Graphics + Illustration", link: "/services/#graphics-and-illustration"}
     ]
 imageTexts:
     - theme: "services"
+      sectionId: "branding"
       image: 
           src: "/images/business-cards.jpg"
           altText: "Business Cards"
@@ -96,6 +97,8 @@ imageTexts:
           }
       ]
     - title: "Graphics + Illustration"
+      theme: "services"
+      sectionId: "graphics-and-illustration"
       titleTheme: "tertiary"
       subtitle: "Cultivating art that empowers."
       backgroundColour: "black"
@@ -106,6 +109,12 @@ imageTexts:
           src: "/images/painting-example.jpg"
           altText: "Painting example"
       leftToRight: true
+      sectionButton: {
+        text: "Click for whimsy",  
+        link: "/portfolio",  
+        backgroundColour: "secondary", 
+        border: true
+      }
       ctaBoxesAlt: [
         {
             title: "Album Artwork",
@@ -150,11 +159,12 @@ imageTexts:
         }
         ]
 featuredProjects: 
-    title: "<span>Check out the </span>Cool Stuff"
+    title: "Check out the <span>Cool Stuff</span>"
+    titleColour: "tertiary-offset"
     projects: ["Those Darjeeling Days", "MyEirene Ltd", "Sandancer EP"]
-    backgroundColour: "black"
+    backgroundColour: "white"
     cardTheme: "secondary"
-    buttonTheme: "secondary"
+    buttonTheme: "primary"
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"

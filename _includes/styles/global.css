@@ -370,7 +370,9 @@ button.form-button {
     margin-bottom: 1rem;
 }
 
+span.button-sm,
 a.button-sm {
+    border-radius: calc(50 / 16 * 1rem);
     font-size: 1rem;
     padding: calc(5 / 16 * 1rem) calc(12 / 16 * 1rem);
     @media (width >= 40rem) { 
