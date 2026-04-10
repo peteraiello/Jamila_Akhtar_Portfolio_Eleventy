@@ -6,12 +6,6 @@ section.resume h3.resume-title {
 section.resume .filters-section-wrapper {
     display: flex;
     flex-direction: column;
-    gap: calc(20 / 16 * 1rem);
-    padding-bottom: calc(50 / 16 * 1rem);
-    @media (width >= 48rem) { 
-        padding-bottom: calc(100 / 16 * 1rem);
-        gap: calc(37 / 16 * 1rem);
-    }
 }
 
 section.resume .filters-section-wrapper .resume-filters__wrapper {
@@ -33,10 +27,22 @@ section.resume h5.resume-education__title span {
     text-transform: none;
 }
 
+section.resume .resume-subtitle-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    @media (width >= 48rem) { 
+        grid-column-start: 3;
+        grid-column-end: 13;    
+    }
+}
+
 section.resume .resume-subtitle {
-    font-family: "marine-up", sans-serif;
+    font-family: "rl-aqva", sans-serif;
     font-weight: 900;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    @media (width >= 48rem) { 
+        font-size: 2.5rem;
+    }
 }
 
 section.resume .resume-subsubtitle {
@@ -45,7 +51,6 @@ section.resume .resume-subsubtitle {
 }
 
 section.resume .resume-skills__title {
-    margin-bottom: 0;
     font-family: "marine-up", sans-serif;
     font-style: italic;
     font-size: clamp(1.25rem, 4vw, 1.75rem);
@@ -53,12 +58,9 @@ section.resume .resume-skills__title {
 }
 
 section.resume .resume-skills__group {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: calc(25 / 16 * 1rem);
-    @media (width >= 48rem) { 
-        gap: calc(50 / 16 * 1rem);
-    }
 }
 
 section.resume .resume-skills__group ul.resume-skills__list {
@@ -73,8 +75,12 @@ section.resume .articles-wrapper {
     display: flex;
     flex-direction: column;
     gap: calc(30 / 16 * 1rem);
+    grid-column-start: 1;
+    grid-column-end: 13;
     @media (width >= 48rem) { 
         gap: calc(58 / 16 * 1rem);
+        grid-column-start: 4;
+        grid-column-end: 11;  
     }
 }
 
@@ -112,18 +118,12 @@ section.resume article.resume-education .resume-meta__wrapper {
 }
 
 section.resume .button-wrapper {
-    margin-top: calc(40 / 16 * 1rem);
     justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: calc(40 / 16 * 1rem);
     @media (width >= 48rem) { 
         flex-direction: row;
-        margin-top: calc(90 / 16 * 1rem);
-    }
-    @media (width >= 64rem) { 
-        margin-top: calc(140 / 16 * 1rem);
     }
 }
 
@@ -133,12 +133,5 @@ section.resume .button-wrapper .wrapper {
 
 section.resume .resume-wrapper {
     display: flex;
-    gap: calc(40 / 16 * 1rem);
     flex-direction: column;
-    @media (width >= 48rem) { 
-        gap: calc(90 / 16 * 1rem);
-    }
-    @media (width >= 64rem) { 
-        gap: calc(140 / 16 * 1rem);
-    }
 }

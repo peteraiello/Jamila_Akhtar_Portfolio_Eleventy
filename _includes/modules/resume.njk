@@ -2,10 +2,10 @@
     <div class="container">
         <div class="filters-section-wrapper">
             {% if resume.title %}
-                <h3 class="resume-title heading-lg">{{resume.title}}</h3>
+                <h3 class="resume-title heading-lg spacer-xl">{{resume.title}}</h3>
             {% endif %}
             {% if resume.filters %}
-                <div class="resume-filters__wrapper">
+                <div class="resume-filters__wrapper spacer-xxl">
                     {%- for item in resume.filters -%}
                         <a class="filter-button" href="{{'#' + item.link}}">{{ item.label}}</button>
                     {% endfor %}
@@ -13,15 +13,15 @@
             {% endif %}
         </div>
         <div class="resume-wrapper">
-            <div class="grid" id="experience">
+            <div class="grid experience spacer-xxxl" id="experience">
                 <!-- Experience start --> 
-                <div class="col-span-3">
+                <div class="resume-subtitle-wrapper">
                     {% if resume.experience.title %}
-                        <h4 class="resume-subtitle heading-sm text-tertiary-offset">{{resume.experience.title}}</h4>
+                        <h4 class="resume-subtitle heading-sm text-tertiary-offset spacer-lg">{{resume.experience.title}}</h4>
                     {% endif %}
                 </div>
                 {% if resume.experience.experiences %}
-                    <div class="articles-wrapper col-span-9">
+                    <div class="articles-wrapper">
                         {%- for experience in resume.experience.experiences -%}
                             <article class="resume__experience font-dark">
                                 {% if experience.role %}
@@ -42,15 +42,15 @@
                 {% endif %}
                 <!-- / Experience end -->
             </div>
-            <div class="grid" id="education">
+            <div class="grid education spacer-xxxl" id="education">
                 <!-- Education start -->
-                <div class="col-span-3">
+                <div class="resume-subtitle-wrapper">
                     {% if resume.education.title %}
-                        <h4 class="resume-subtitle heading-sm text-tertiary-offset">{{resume.education.title}}</h4>
+                        <h4 class="resume-subtitle heading-sm text-tertiary-offset spacer-lg">{{resume.education.title}}</h4>
                     {% endif %}
                 </div>
                 {% if resume.education.items %}
-                    <div class="articles-wrapper col-span-9">
+                    <div class="articles-wrapper">
                         {%- for item in resume.education.items -%}
                             <article class="resume-education">
                                 <h5 class="resume-subsubtitle resume-education__title heading-sm">{{item.title}}</h5>
@@ -69,11 +69,11 @@
                 {% endif %}
                 <!-- / Education end -->
             </div>
-            <div class="grid" id="skills">
+            <div class="grid skills spacer-xxxl" id="skills">
                 <!-- Skills start -->
-                <div class="col-span-3">
+                <div class="resume-subtitle-wrapper">
                     {% if resume.skills.title %}
-                        <h4 class="resume-subtitle heading-sm text-tertiary">{{resume.skills.title}}</h4>
+                        <h4 class="resume-subtitle heading-sm text-tertiary spacer-lg">{{resume.skills.title}}</h4>
                     {% endif %}
                 </div>
                 {% if resume.skills.items %}
@@ -82,7 +82,7 @@
                             {%-  for item in resume.skills.items -%}
                                 <div class="resume-skills__group">
                                     {% if item.title %}
-                                        <h5 class="resume-skills__title">{{item.title}}</h5>
+                                        <h5 class="resume-skills__title spacer-md">{{item.title}}</h5>
                                     {% endif %}
                                     {% if item.group %}
                                         <ul class="resume-skills__list">
@@ -98,15 +98,15 @@
                 {% endif %}
                 <!-- / Skills end -->
             </div>
-            <div class="grid" id="volunteering">
+            <div class="grid volunteering spacer-xxxl" id="volunteering">
                 <!-- Volunteering start -->
-                <div class="col-span-3">
+                <div class="resume-subtitle-wrapper">
                     {% if resume.volunteering.title %}
-                        <h4 class="resume-subtitle heading-sm text-tertiary">{{resume.volunteering.title}}</h4>
+                        <h4 class="resume-subtitle heading-sm text-tertiary spacer-lg">{{resume.volunteering.title}}</h4>
                     {% endif %}
                 </div>
                 {% if resume.volunteering.items %}
-                    <div class="articles-wrapper col-span-9">
+                    <div class="articles-wrapper">
                         {%- for item in resume.volunteering.items -%}
                             <article class="resume-volunteering">
                                 {% if item.organisation %}
