@@ -1,16 +1,15 @@
-section.featured-projects.bg-white .featured-projects__title {
-    color: var(--secondary-color);
+section.featured-projects .featured-projects__title {
+    font-family: "marine-up", sans-serif;
+    font-weight: 400;
+}
+
+section.featured-projects .featured-projects__title span {
+    font-family: "rl-aqva", sans-serif;
+    font-weight: 900;
 }
 
 section.featured-projects .featured-projects__title {
     text-align: center;
-}
-
-section.featured-projects.bg-secondary .featured-projects__title {
-    color: var(--primary-color);
-}
-
-section.featured-projects .featured-projects__title {
     margin-bottom: calc(20 / 16 * 1rem);
     @media (width >= 48rem) {
         margin-bottom: calc(40 / 16 * 1rem);
@@ -26,12 +25,3 @@ section.featured-projects .featured-projects__wrapper {
         flex-direction: row;
     }
 }
-
-section.featured-projects .featured-projects__wrapper article {
-    width: auto;
-    @media (width >= 48rem) { 
-        width: 33.33%;
-    }
-}
-
-

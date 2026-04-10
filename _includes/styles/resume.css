@@ -63,22 +63,9 @@ section.resume .resume-skills__group {
 section.resume .resume-skills__group ul.resume-skills__list {
     margin: 0;
     display: flex;
-    /* gap: calc(25 / 16 * 1rem); */
     flex-direction: column;
     padding-left: 0;
     list-style: none;
-    /* @media (width >= 48rem) { 
-        gap: calc(50 / 16 * 1rem);
-    } */
-}
-
-section.resume .subtitle-wrapper {
-    grid-column-start: 1;
-    grid-column-end: 13;
-    @media (width >= 48rem) {
-        grid-column-start: 3;
-        grid-column-end: 13;
-    }
 }
 
 section.resume .articles-wrapper {

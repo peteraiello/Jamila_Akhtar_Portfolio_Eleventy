@@ -1,42 +1,113 @@
-<section class="image-text {{ "theme-" + (imageTextTheme or "post") }}{% if imageTextLeftToRight === true %} left-to-right {% else %} right-to-left {% endif %}{{ "bg-" + (imageText.backgroundColour or "white") }}{% if imageText.graphic %} has-graphic{% endif%}">
+<section class="image-text {{ "theme-" + (imageText.theme or "post") }}{% if imageText.leftToRight === true %} left-to-right {% else %} right-to-left {% endif %}{{ "bg-" + (imageText.backgroundColour or "white") }}{% if imageText.graphic %} has-graphic{% endif%}" {% if imageText.sectionId %} id="{{ imageText.sectionId }}" {% endif %}>
     <div class="container">
-        <div class="grid">
-            <div class="image-text-image-column">
-                {% if imageTextImage.src %}
-                    <div class="image-text-image__wrapper {{ "image-text-orientation__" + (imageTextImage.orientation or "portrait") }}">
-                        <img loading="lazy" src="{{ imageTextImage.src }}" alt="{{ imageTextImage.altText }}" />
-                    </div>
-                {% endif %}
-            </div>
-            <div class="image-text-text-column gap-lg">
-                {% if imageTextTitle %}
-                    <h3 class="image-text__title {% if imageTextTheme === "project" %} heading-sm {% else %} heading-lg {% endif %}">{{ imageTextTitle }}</h3>
-                {% endif %}
-                {% if imageTextBlurb %}
-                    <div class="image-text__content body-lead">
-                        {{ imageTextBlurb | safe }}
-                    </div>
-                {% endif %}  
-                {% if imageTextButton.link %}
-                    <div class="button-wrapper">
-                        <a href="{{ imageTextButton.link }}" class="{{ "button button-" + (imageTextButton.backgroundColour or "secondary") }}{% if imageTextButton.border %} w-border{% endif %}">{{ imageTextButton.text }}</a>
-                    </div>
-                {% endif %}
-                {% if imageTextButtons %}
-                    <div class="buttons-wrapper">
-                        {%- for button in imageTextButtons -%}
-                            <div class="button-wrapper">            
-                                <a href="{{button.link}}" class="{{ "button button-" + (button.backgroundColour or "secondary") }}{% if button.border %} w-border{% endif %}">
-                                    {{button.text}}
-                                </a>
+        <div class="image-text-section__wrapper gap-xl">
+            <div class="grid">
+                <div class="image-text-image-column">
+                    {% if imageText.image.src %}
+                        <div class="image-text-image__wrapper {{ "image-text-orientation__" + (imageText.image.orientation or "portrait") }}">
+                            <img loading="lazy" src="{{ imageText.image.src }}" alt="{{ imageText.image.altText }}" />
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="image-text-text-column gap-lg">
+                    {% if imageText.title %}
+                        <h3 class="image-text__title {{ "text-" + (imageText.titleTheme or "home") }} {% if imageText.theme === "project" %} heading-sm {% else %} heading-lg {% endif %}">{{ imageText.title }}</h3>
+                    {% endif %}                               
+                    {% if imageText.blurb %}
+                        <div class="image-text-subtitle-content__wrapper">
+                            {% if imageText.subtitle %}
+                                <div class="image-text__subtitle-wrapper">
+                                    <h4 class="image-text__subtitle heading-sm">{{ imageText.subtitle }}</h4>
+                                </div>
+                            {% endif %}
+                            <div class="image-text__content body-lead">
+                                {{ imageText.blurb | safe }}
                             </div>
-                        {% endfor %}            
+                        </div>
+                    {% endif %}  
+                    {% if imageText.button.link %}
+                        <div class="button-wrapper">
+                            <a href="{{ imageText.button.link }}" class="{{ "button button-" + (imageText.button.backgroundColour or "secondary") }}{% if imageText.button.border %} w-border{% endif %}">{{ imageText.button.text }}</a>
+                        </div>
+                    {% endif %}               
+                    {% if imageText.buttons %}
+                        <div class="buttons-wrapper">
+                            {%- for button in imageText.buttons -%}
+                                <div class="button-wrapper">            
+                                    <a href="{{button.link}}" class="{{ "button button-" + (button.backgroundColour or "secondary") }}{% if button.border %} w-border{% endif %}">
+                                        {{button.text}}
+                                    </a>
+                                </div>
+                            {% endfor %}            
+                        </div>
+                    {% endif %}
+                </div>
+                {% if imageText.graphic %}
+                    <div class="image-text-graphic"><span class="visually-hidden">graphic</span></div>
+                {% endif %}          
+            </div>
+            <div class="cta-boxes-wrapper">        
+                {% if imageText.ctaBoxes %}
+                    <div class="grid">
+                        {% for box in imageText.ctaBoxes %}
+                            <article class="article-box col-span-4">
+                                {% if box.title %}
+                                    <div class="title-wrapper">
+                                        <h3>{{ box.title }}</h3>
+                                    </div>
+                                {% endif %}
+                                {% if box.blurb %}
+                                    <div class="article-blurb">
+                                        {{ box.blurb | safe }}
+                                    </div>
+                                {% endif %}
+                            </article>
+                        {% endfor %}
                     </div>
                 {% endif %}
             </div>
-            {% if graphic %}
-                <div class="image-text-graphic"><span class="visually-hidden">graphic</span></div>
-            {% endif %}
+            <div class="cta-boxes-alt-wrapper">
+                {% if imageText.ctaBoxesAlt %}
+                    {% for cta in imageText.ctaBoxesAlt %}
+                        <article>
+                            {% if cta.title %}
+                                <div class="title-wrapper">
+                                    <h3 class="heading-md">{{ cta.title }}</h3>
+                                </div>
+                            {% endif %}                    
+                            {% if cta.timeline or cta.blurb or cta.included %}
+                                <div class="content-wrapper">
+                                    <div class="timeline-and-blurb__wrapper">
+                                        {% if cta.timeline %}<p class="timeline heading-sm">Timeline: {{ cta.timeline }}</p>{% endif %}
+                                        {% if cta.blurb %}<p class="blurb">{{ cta.blurb }}</p>{% endif %}
+                                    </div>
+                                    {% if cta.included %}
+                                        <p class="included-title">All that's included:</p>
+                                        <ul class="included">
+                                            {% for item in cta.included %}
+                                                <li>{{ item }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                    {% if cta.disclaimer %}
+                                        <p>{{ cta.disclaimer }}</p>
+                                    {% endif %}
+                                </div>
+                            {% elif cta.content %}
+                                <div class="content-wrapper">
+                                    <p>{{ cta.content | safe }}</p>
+                                </div>
+                            {% endif %}
+                        </article>
+                    {% endfor %}
+                {% endif %}
+            </div>
+
+            {% if imageText.sectionButton.link %}
+                <div class="button-wrapper">
+                    <a href="{{ imageText.sectionButton.link }}" class="{{ "button button-" + (imageText.sectionButton.backgroundColour or "secondary") }}{% if imageText.sectionButton.border %} w-border{% endif %}">{{ imageText.sectionButton.text }}</a>
+                </div>
+            {% endif %}   
         </div>
     </div>
 </section>

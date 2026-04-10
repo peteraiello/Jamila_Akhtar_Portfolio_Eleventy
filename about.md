@@ -8,6 +8,7 @@ header:
         altText: "header logo"
     nav: [
         {label: "Portfolio", link: "/portfolio"},
+        {label: "Services", link: "/services"},
         {label: "Experience", link: "/experience"},
         {label: "About", link: "/about", isActive: true},
         {label: "Contact", link: "/contact"}
@@ -26,6 +27,7 @@ imageText:
         src: "/images/about-jamila.jpg"
         altText: "Jamila portrait"
     title: "I'm Jamila!"
+    titleTheme: "black"
     blurb: "<p>A designer with a slight obsession for colour and deep fascination for transitional/liminal spaces (probably due to my Third Culture Kid upbringing and my Interior Design background). My work concentrates on crafting beautiful pieces of art by blending structure with purpose; I merge strategy with visual direction to infuse design with meaning.</p>
     <p>My life story takes me on adventures through the U.A.E. and the UK, but now I am back in my home country of Canada where it all began.</p>
     <p>Beyond design, I can be found with my nose deep in a book, doing sudoku, getting lost in some type of arts or crafts, dancing the day away, baking delicious sweet treats or being outdoors where I will either be wandering on a hike, submerged in the ocean or galivanting through a botanical garden.</p>

@@ -8,6 +8,7 @@ header:
         altText: "header logo"
     nav: [
         {label: "Portfolio", link: "/portfolio"},
+        {label: "Services", link: "/services"},
         {label: "Experience", link: "/experience", isActive: true},
         {label: "About", link: "/about"},
         {label: "Contact", link: "/contact"}
@@ -138,10 +139,11 @@ resume:
         }
     ]
 featuredProjects: 
-    title: "Check Out My Projects"
+    title: "<span>Check out the </span>Cool Stuff"
     projects: ["Those Darjeeling Days", "MyEirene Ltd", "Sandancer EP"]
-    backgroundColour: "secondary"
+    backgroundColour: "black"
     cardTheme: "secondary"
+    buttonTheme: "secondary"
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"

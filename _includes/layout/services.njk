@@ -1,0 +1,18 @@
+{% include "../head.njk" %}
+
+{% include "../header.njk" %}
+
+{% include "../modules/hero.njk" %}
+
+{% if imageTexts %}
+    {%- for block in imageTexts -%}
+        {% set imageText = block %}
+        {% include "../modules/imageText.njk" %}
+    {%- endfor -%}
+{% elif imageText %}
+    {% include "../modules/imageText.njk" %}
+{% endif %}
+
+{% include "../modules/featuredProjects.njk" %}
+
+{% include "../footer.njk" %}
