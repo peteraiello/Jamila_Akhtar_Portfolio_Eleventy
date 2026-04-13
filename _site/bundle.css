@@ -14,10 +14,6 @@ header.main-header {
         padding-top: 35px;
         padding-bottom: 35px;
     }
-    @media (width >= 96rem) {
-        padding-top: 49px;
-        padding-bottom: 49px;
-    }
 }
 
 .nav-logo-wrapper a {
@@ -743,16 +739,22 @@ section.hero > .container {
     position: relative;
 }
 
-section.hero.theme-home {
-    overflow: hidden;
-    padding: 0;
-}
-
 section.hero .hero-meta-wrapper {
     display: flex;
     gap: 1.25rem;
     flex-direction: column;
     justify-content: start;
+}
+
+section.hero .hero-meta-wrapper p.hero-strapline {
+    display: block;
+    font-family: "marine-oblicua";
+    margin: 0;
+}
+
+section.hero.theme-home {
+    overflow: hidden;
+    padding: 0;
 }
 
 section.hero.theme-home .hero-wrapper {
@@ -766,39 +768,32 @@ section.hero.theme-home .hero-wrapper {
     }
 }
 
-section.hero.theme-home .hero-wrapper .hero-meta-wrapper {
-    background-color: transparent;
-}
-
 section.hero.theme-home .hero-wrapper .hero-background-image {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 100%;
     @media (width >= 48rem) { 
+        width: 90%;
+        height: 100%;
+        background-size: 70%;
         background-position: right;
+        right: 10%;
         bottom: auto;
     }
 }
 
 section.hero.theme-home .hero-wrapper .hero-meta-wrapper {
+    padding: calc(72 / 16 * 1rem) 0;
     display: flex;
     flex-direction: column;
     order: 1;
-    padding: calc(90 / 16 * 1rem) 0;
-    @media (width >= 48rem) { 
-        padding: calc(140 / 16 * 1rem) 0;
-    }
-}
-
-section.hero .hero-meta-wrapper p.hero-strapline {
-    display: block;
-    font-family: "marine-oblicua";
-    margin: 0;
+    width: 100%;
+    gap: calc(150 / 16 * 1rem);
 }
 
 section.hero.theme-home .hero-strapline,
@@ -822,7 +817,20 @@ section.hero.theme-home .hero-typewriter-wrapper {
     height: 77px;
 }
 
+section.hero.theme-home .hero-meta-wrapper .button-list {
+    display: none;
+    @media (width >= 48rem) { 
+        display: flex;
+    }
+}
 
+section.hero.theme-home .hero-meta-wrapper .hero-title {
+    text-align: left;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-family: "marine-up", sans-serif;
+    font-weight: 400;
+    color: var(--black);
+}
 
 section.hero.bg-secondary .hero-strapline,
 section.hero.bg-secondary .hero-title {
@@ -843,6 +851,10 @@ section.hero .hero-meta-wrapper .hero-title br {
     }
 }
 
+section.hero.theme-portfolio .hero-meta-wrapper .hero-title {
+    text-align: left;
+}
+
 section.hero.theme-portfolio .hero-meta-wrapper {
     order: 2;
     display: flex;
@@ -850,13 +862,6 @@ section.hero.theme-portfolio .hero-meta-wrapper {
     grid-column-end: 12;
 } 
 
-section.hero.theme-portfolio .hero-meta-wrapper .hero-title {
-    text-align: left;
-}
-
-section.hero.theme-home .hero-meta-wrapper .hero-title {
-    text-align: right;
-}
 
 section.hero.theme-portfolio .hero-image-wrapper {
     order: 1;
@@ -1010,11 +1015,13 @@ section.hero.theme-services .hero-image-wrapper img {
 section.hero ul.button-list {
     width: 100%;
     margin-top: auto !important;
+    margin-bottom: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     list-style: none;
     gap: calc(20 / 16 * 1rem);
+    z-index: 10;
     @media (width >= 48rem) { 
         flex-direction: row;
     }

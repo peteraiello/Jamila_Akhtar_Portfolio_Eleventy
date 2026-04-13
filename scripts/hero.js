@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }      
       let delay = isDeleting ? 80 : 120;    
       if (!isDeleting && charIndex === word.length) {
-        delay = 1500;
+        delay = 900;
         isDeleting = true;
       } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         current = (current + 1) % subtitles.length;
         applyColour();
-        delay = 300;
+        delay = 900;
       } 
       setTimeout(type, delay);
   }

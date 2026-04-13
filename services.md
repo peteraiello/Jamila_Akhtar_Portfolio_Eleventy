@@ -22,8 +22,8 @@ hero:
     theme: "services"
     backgroundColour: "secondary"
     ctaButtons: [
-        {label: "Branding", link: "/services/#branding"},
-        {label: "Graphics + Illustration", link: "/services/#graphics-and-illustration"}
+        {label: "Branding", link: "/services/#branding", theme: "tertiary-offset", border: true},
+        {label: "Graphics + Illustration", link: "/services/#graphics-and-illustration", theme: "tertiary-offset", border: true}
     ]
 imageTexts:
     - theme: "services"

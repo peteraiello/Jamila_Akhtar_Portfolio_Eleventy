@@ -8,31 +8,35 @@
                     <div class="hero-background-image" style="background-image: url('{{hero.backgroundImage.src}}')"><span class="visually-hidden">background container</span></div>
                 {% endif %}
                 <div class="hero-meta-wrapper">
-                    {% if hero.title %}
-                        <h1 class="hero-title heading-xl">{{ hero.title | safe }}</h1>
-                    {% endif %}
-                    {% if hero.typewriter %}
-                        <div class="hero-typewriter">
-                            {%- for word in hero.typewriter -%}
-                                <span class="visually-hidden">{{ word }}</span>
-                            {%- endfor -%}
-                        </div>
-                    {% endif %}
-                    {% if hero.typewriter %}
-                        <div class="hero-typewriter-wrapper">
-                            <h2 class="typewriter-effect heading-xl"></h2>
-                        </div>
-                    {% endif %}
-                    {% if hero.strapline %}
-                        <div class="hero-strapline-wrapper">
-                            <p class="hero-strapline heading-sm">{{ hero.strapline }}</p>
-                        </div>
-                    {% endif %}
+                    <div class="hero-title-and-strapline-wrapper">
+                        {% if hero.title %}
+                            <h1 class="hero-title heading-xl">{{ hero.title | safe }}</h1>
+                        {% endif %}
+                        {% if hero.typewriter %}
+                            <div>
+                                <div class="hero-typewriter">
+                                    {%- for word in hero.typewriter -%}
+                                        <span class="visually-hidden">{{ word }}</span>
+                                    {%- endfor -%}
+                                </div>
+                                <div class="hero-typewriter-wrapper">
+                                    <h2 class="typewriter-effect heading-xl"></h2>
+                                </div>
+                            </div>
+                        {% endif %}
+                        {% if hero.strapline %}
+                            <div class="hero-strapline-wrapper">
+                                <p class="hero-strapline heading-sm">{{ hero.strapline }}</p>
+                            </div>
+                        {% endif %}
+                    </div>
                     {% if hero.ctaButtons %}
                         <ul class="button-list">
                             {%- for button in hero.ctaButtons -%}
                                 <li>
-                                    <span><a href="{{ button.link }}" class="button button-sm button-tertiary-offset w-border">{{ button.label }}</a></span>
+                                    <span>
+                                        <a href="{{ button.link }}" class="button button-sm {{ "button-" + (button.theme or "secondary") }} {% if button.border %} w-border {% endif %}">{{ button.label }}</a>
+                                    </span>
                                 </li>
                             {%- endfor -%}
                         </ul>

@@ -13,10 +13,6 @@ header.main-header {
         padding-top: 35px;
         padding-bottom: 35px;
     }
-    @media (width >= 96rem) {
-        padding-top: 49px;
-        padding-bottom: 49px;
-    }
 }
 
 .nav-logo-wrapper a {

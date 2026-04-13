@@ -20,6 +20,14 @@ hero:
         src: "/images/hero/creative-juice.svg"
     backgroundColour: "white"
     theme: "home"
+    ctaButtons: [
+        {
+            label: "Let's Collaborate", 
+            link: "/contact", 
+            theme: "tertiary",  
+            border: true
+        },
+    ]
 imageText: 
     theme: "home"
     backgroundColour: "secondary"
