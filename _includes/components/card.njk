@@ -1,5 +1,5 @@
 <a href="{{ cardLink }}" class="project-card-link">
-    <article class="project-card">
+    <article class="{{ (cardTheme or "project-card") }}">
         {% if cardImage %}
             <div class="project-card-image__wrapper">
                 <img src="{{ cardImage }}" alt="{{ cardImageAlt }}" class="project-card__image" />
@@ -19,9 +19,12 @@
                     {%- endfor -%}
                 </ul>
             {% endif %}
+            {% if cardBlurb %}
+                <div class="card-blurb text-sm">{{ cardBlurb | safe }}</div>
+            {% endif %}
             {% if cardLink %}
                 <div class="button-wrapper">
-                    <span href="{{ cardLink }}" class="{{ "button-" + (cardButtonTheme or "secondary") }} button-sm w-border">{{ "Check me out!" }}</span>
+                    <span href="{{ cardLink }}" class="{{ "button-" + (cardButtonTheme or "secondary") }} button-sm w-border">{{ (cardButtonText or "Check me out!") }}</span>
                 </div>
             {% endif %} 
         </div>
