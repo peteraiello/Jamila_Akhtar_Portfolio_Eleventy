@@ -6,6 +6,10 @@
                     <h3 class="cta-title heading-md">{{form.title | safe }}</h3>
                 {% endif %}
 
+                {% if form.titleTwo %}
+                    <h3 class="cta-title heading-md">{{form.titleTwo | safe }}</h3>
+                {% endif %}
+
                 {% if form.graphic %}
                     <div class="graphic-wrapper"><span class="visually-hidden">graphic</span></div>
                 {% endif %}

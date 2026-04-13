@@ -69,7 +69,8 @@ quickLinks:
             {title: "post two"}]
 form: 
     backgroundColour: "secondary"
-    title: "Keen to work with me? <span>Then please get in touch!</span>"
+    title: "Ready to <span>amp up</span> your <span>whimsy?</span>"
+    titleTwo: "Then let's <span>get started!</span>"
     graphic: 
         src: "/images/form/cherry-punnet.svg"
         altText: "Cherry Punnet"
