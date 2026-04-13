@@ -46,8 +46,8 @@
                     <div class="image-text-graphic"><span class="visually-hidden">graphic</span></div>
                 {% endif %}          
             </div>
-            <div class="cta-boxes-wrapper">        
-                {% if imageText.ctaBoxes %}
+            {% if imageText.ctaBoxes %}
+                <div class="cta-boxes-wrapper">        
                     <div class="grid">
                         {% for box in imageText.ctaBoxes %}
                             <article class="article-box col-span-4">
@@ -64,10 +64,10 @@
                             </article>
                         {% endfor %}
                     </div>
-                {% endif %}
-            </div>
-            <div class="cta-boxes-alt-wrapper">
-                {% if imageText.ctaBoxesAlt %}
+                </div>
+            {% endif %}
+            {% if imageText.ctaBoxesAlt %}
+                <div class="cta-boxes-alt-wrapper">
                     {% for cta in imageText.ctaBoxesAlt %}
                         <article>
                             {% if cta.title %}
@@ -100,9 +100,8 @@
                             {% endif %}
                         </article>
                     {% endfor %}
-                {% endif %}
-            </div>
-
+                </div>
+            {% endif %}
             {% if imageText.sectionButton.link %}
                 <div class="button-wrapper">
                     <a href="{{ imageText.sectionButton.link }}" class="{{ "button button-" + (imageText.sectionButton.backgroundColour or "secondary") }}{% if imageText.sectionButton.border %} w-border{% endif %}">{{ imageText.sectionButton.text }}</a>
