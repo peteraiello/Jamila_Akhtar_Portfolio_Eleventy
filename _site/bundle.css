@@ -1708,11 +1708,6 @@ article.project-card .project-card__meta ul.card-tags__wrapper {
     list-style: none;
 }
 
-section.resume h3.resume-title {
-    text-align: center;
-    color: var(--tertiary-offset);
-}
-
 section.resume .filters-section-wrapper {
     display: flex;
     flex-direction: column;
