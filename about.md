@@ -34,7 +34,7 @@ imageText:
     "
     buttons: [
         {text: "My Experience", link: "/experience", backgroundColour: "tertiary", border: true},
-        {text: "My Portfolio",  link: "/portfolio",  backgroundColour: "tertiary", border: true}
+        {text: "My Portfolio",  link: "/portfolio",  backgroundColour: "primary", border: true}
     ]
     leftToRight: false    
 quickLinks: 

@@ -22,7 +22,7 @@ hero:
     theme: "contact"
     backgroundColour: "secondary"
 form: 
-    title: "Keen to work with me?</ br> Then please get in touch!"
+    title: "Ready to <span>amp up</span> your <span>whimsy?</span><br /> Then <span>fill her up</span> so the <span>work</span> can <span>begin</span>"
     backgroundColour: "tertiary"
     theme: "contact"
 featuredProjects: 

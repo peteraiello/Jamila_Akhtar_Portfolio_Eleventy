@@ -27,16 +27,16 @@ section.contact-form.theme-portfolio .column-form {
 section.contact-form.theme-contact .column-text {
     grid-column: span 12;
     @media (width >= 48rem) {
-        grid-column-start: 4;
-        grid-column-end: 10;
+        grid-column-start: 3;
+        grid-column-end: 11;
     }
 }
 
 section.contact-form.theme-contact .column-form {
     grid-column: span 12;
     @media (width >= 48rem) { 
-        grid-column-start: 4;
-        grid-column-end: 10;
+        grid-column-start: 3;
+        grid-column-end: 11;
     }
 }
 
@@ -68,6 +68,16 @@ section.contact-form .column-form form {
     border-radius: 20px;
 }
 
+section.contact-form .cta-title {
+    font-family: 'marine-up', sans-serif;
+    font-weight: 400;
+}
+
+section.contact-form .cta-title span {
+    font-family: 'rl-aqva', sans-serif;
+    font-weight: 900;
+}
+
 section.contact-form.bg-secondary .cta-title {
     height: 100%;
     display: flex;
@@ -86,7 +96,7 @@ section.contact-form.bg-tertiary .cta-title {
 section.contact-form.bg-secondary .cta-title {
     color: var(--highlight-color);
 }
-
+ 
 section.contact-form.bg-secondary form {
     border: 3px solid var(--highlight-color);
 }

@@ -34,7 +34,7 @@
                         <div class="buttons-wrapper">
                             {%- for button in imageText.buttons -%}
                                 <div class="button-wrapper">            
-                                    <a href="{{button.link}}" class="{{ "button button-" + (button.backgroundColour or "secondary") }}{% if button.border %} w-border{% endif %}">
+                                    <a href="{{button.link}}" class="{{ "button button-" + (button.backgroundColour or "secondary") }}{% if button.border %} w-border {% endif %}">
                                         {{button.text}}
                                     </a>
                                 </div>
