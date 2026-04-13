@@ -1,31 +1,22 @@
-<section class="quick-links">
+<section class="quick-links {{ "bg-" + (quickLinks.backgroundColour or "white") }}"">
     <div class="container">
-    {% if quickLinks.title %}
-        <h3>{{ quickLinks.title }}</h3>
-    {% endif %}
-    <div class="grid">
-        {%- for card in quickLinks.cards -%}
-            <article class="quick-link-card quick-link-card-index__{{ loop.index }}">  
-                {% if card.image %}
-                    <div class="image-wrapper">
-                        <img src="{{ card.image.src }}" alt="{{ card.image.altText }}" class="quick-link-card__image" />
-                    </div>
-                {% endif %}                
-                {% if card.title %}
-                    <h4 class="quick-link-card__title heading-md">{{card.title}}</h4>
-                {% endif %}
-                {% if card.blurb %}
-                    <div class="quick-link-card__blurb">
-                        {{ card.blurb | safe }}
-                    </div>
-                {% endif %}
-                {% if card.button.text %}
-                    <span class="button-wrapper">
-                        <a href="{{ card.button.link }}" class="button button-primary">{{ card.button.text }}</a>
-                    </span>
-                {% endif %}
-            </article>
-        {%- endfor -%}
-    </div>
+        {% if quickLinks.title %}
+            <h3>{{ quickLinks.title }}</h3>
+        {% endif %}
+        <div class="grid">
+            <div class="cards-wrapper">
+                {%- for card in quickLinks.cards -%}
+                    {% set cardImage = card.image.src %}
+                    {% set cardImageAlt = card.image.altText %}
+                    {% set cardTitle = card.title %}
+                    {% set cardBlurb = card.blurb %}      
+                    {% set cardLink = card.button.link %}
+                    {% set cardTheme = card.theme %}
+                    {% set cardButtonTheme = card.button.theme %}  
+                    {% set cardButtonText = card.button.text %} 
+                    {% include "../components/card.njk" %}
+                {%- endfor -%}
+            </div>
+        </div>
     </div>
 </section>

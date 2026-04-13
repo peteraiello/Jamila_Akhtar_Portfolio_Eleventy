@@ -39,37 +39,44 @@ imageText:
     blurb: "<p>I'm Jamila, an Ottawa-based designer who specializes in branding, graphics and illustration, where I focus on balancing form and function. I work closely with colour to produce striking, identifiable pieces of art.</p>"
     graphic: true
     button: 
-        text: "Discover more"
+        text: "Learn more"
         link: "/about"
-        backgroundColour: "tertiary"
-        border: false
+        backgroundColour: "tertiary-offset"
+        border: true
     leftToRight: true
 quickLinks: 
     title: ""
+    backgroundColour: "primary-offset"
     cards: [{
         title: "Portfolio",
-        blurb: "<p>A carefully curated treasure trove of my creations.</p>",
+        theme: "quick-link",
+        blurb: "<p>Check out all the cool paraphernalia I've constructed.</p>",
         image: {
             src: "images/drink-up.svg",
             altText: "drink up"
         },
         button: 
             {
-                text: "View Portfolio",
-                link: "/portfolio"
+                text: "Quench your curiosity",
+                link: "/portfolio",
+                theme: "tertiary",
+                border: true
             }
     },
     {
         title: "Experience",
-        blurb: "<p>A list of my credentials and my accomplishments.</p>",
+        theme: "quick-link",
+        blurb: "<p>The cultivation of my professional garden, AKA my career history.</p>",
         image: {
             src: "images/watering-plant.svg",
             altText: "Watering plant"
         },
         button: 
             {
-                text: "Learn More",
-                link: "/experience"
+                text: "Ramble through",
+                link: "/experience",
+                theme: "tertiary",
+                border: true
             }
     }]
 footer: 

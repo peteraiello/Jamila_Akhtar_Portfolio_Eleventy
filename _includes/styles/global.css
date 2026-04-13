@@ -10,6 +10,7 @@ html {
 
 :root {
     --primary-color: #A1CCFF;
+    --primary-offset: #A2F4E6;
     --secondary-color: #196638;
     --tertiary-color: #FB93D0;
     --tertiary-offset: #B5182F;
@@ -231,6 +232,10 @@ section.bg-tertiary {
     background-color: var(--tertiary-color);
 }
 
+section.bg-primary-offset {
+    background-color: var(--primary-offset);
+}
+
 .container {
     margin: 0 auto;
     padding: 0 20px;
@@ -372,6 +377,8 @@ button.form-button {
 
 span.button-sm,
 a.button-sm {
+    transition: all 200ms ease-in-out;
+    font-weight: 900;
     border-radius: calc(50 / 16 * 1rem);
     font-size: 1rem;
     padding: calc(5 / 16 * 1rem) calc(12 / 16 * 1rem);
