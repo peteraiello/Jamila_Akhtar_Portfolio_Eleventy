@@ -2,10 +2,10 @@
     <div class="container">
         <div class="filters-section-wrapper spacer-xl">
             {% if resume.title %}
-                <h3 class="resume-title heading-lg spacer-lg">{{resume.title}}</h3>
+                <h3 class="resume-title heading-lg spacer-xl">{{resume.title}}</h3>
             {% endif %}
             {% if resume.filters %}
-                <div class="resume-filters__wrapper">
+                <div class="resume-filters__wrapper spacer-xxl">
                     {%- for item in resume.filters -%}
                         <a class="filter-button" href="{{'#' + item.link}}">{{ item.label}}</button>
                     {% endfor %}
@@ -13,11 +13,11 @@
             {% endif %}
         </div>
         <div class="resume-wrapper">
-            <div class="grid" id="experience">
+            <div class="grid experience spacer-xxxl" id="experience">
                 <!-- Experience start --> 
-                <div class="subtitle-wrapper">
+                <div class="resume-subtitle-wrapper">
                     {% if resume.experience.title %}
-                        <h4 class="resume-subtitle heading-sm text-tertiary-offset spacer-md">{{resume.experience.title}}</h4>
+                        <h4 class="resume-subtitle heading-sm text-tertiary-offset spacer-lg">{{resume.experience.title}}</h4>
                     {% endif %}
                 </div>
                 {% if resume.experience.experiences %}
@@ -44,11 +44,11 @@
                 {% endif %}
                 <!-- / Experience end -->
             </div>
-            <div class="grid" id="education">
+            <div class="grid education spacer-xxxl" id="education">
                 <!-- Education start -->
-                <div class="subtitle-wrapper">
+                <div class="resume-subtitle-wrapper">
                     {% if resume.education.title %}
-                        <h4 class="resume-subtitle heading-sm text-tertiary-offset spacer-md">{{resume.education.title}}</h4>
+                        <h4 class="resume-subtitle heading-sm text-tertiary-offset spacer-lg">{{resume.education.title}}</h4>
                     {% endif %}
                 </div>
                 {% if resume.education.items %}
@@ -71,11 +71,11 @@
                 {% endif %}
                 <!-- / Education end -->
             </div>
-            <div class="grid" id="skills">
+            <div class="grid skills spacer-xxxl" id="skills">
                 <!-- Skills start -->
-                <div class="subtitle-wrapper">
+                <div class="resume-subtitle-wrapper">
                     {% if resume.skills.title %}
-                        <h4 class="resume-subtitle heading-sm text-tertiary spacer-md">{{resume.skills.title}}</h4>
+                        <h4 class="resume-subtitle heading-sm text-tertiary spacer-lg">{{resume.skills.title}}</h4>
                     {% endif %}
                 </div>
                 {% if resume.skills.items %}
@@ -84,7 +84,7 @@
                             {%-  for item in resume.skills.items -%}
                                 <div class="resume-skills__group spacer-sm">
                                     {% if item.title %}
-                                        <h5 class="resume-skills__title spacer-xs">{{item.title}}</h5>
+                                        <h5 class="resume-skills__title spacer-md">{{item.title}}</h5>
                                     {% endif %}
                                     {% if item.group %}
                                         <ul class="resume-skills__list">
@@ -100,11 +100,11 @@
                 {% endif %}
                 <!-- / Skills end -->
             </div>
-            <div class="grid" id="volunteering">
+            <div class="grid volunteering spacer-xxxl" id="volunteering">
                 <!-- Volunteering start -->
-                <div class="subtitle-wrapper">
+                <div class="resume-subtitle-wrapper">
                     {% if resume.volunteering.title %}
-                        <h4 class="resume-subtitle heading-sm text-tertiary spacer-md">{{resume.volunteering.title}}</h4>
+                        <h4 class="resume-subtitle heading-sm text-tertiary spacer-lg">{{resume.volunteering.title}}</h4>
                     {% endif %}
                 </div>
                 {% if resume.volunteering.items %}

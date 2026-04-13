@@ -14,12 +14,20 @@ header:
         {label: "Contact", link: "/contact"}
     ]
 hero: 
-    title: "Design Studio"
+    title: "Design for the"
+    typewriter: ["whimsical", "feisty", "playful", "edgy"]
     backgroundImage: 
         src: "/images/hero/creative-juice.svg"
-    strapline: "Branding | Graphics | Illustration"
     backgroundColour: "white"
     theme: "home"
+    ctaButtons: [
+        {
+            label: "Let's Collaborate", 
+            link: "/contact", 
+            theme: "tertiary",  
+            border: true
+        },
+    ]
 imageText: 
     theme: "home"
     backgroundColour: "secondary"
