@@ -7,6 +7,7 @@ header.main-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     @media (width >= 80rem) { 
@@ -67,18 +68,20 @@ header.main-header {
 }
 
 .mobile-menu-button {
-    cursor: pointer;
-    display: block;
-    border: 0;
-    background: transparent;
-    width: 50px;
-    background-image: url("images/mobile_menu_flower_green_solid.svg");
-    /* background-image: url("images/mobile-menu-button.svg"); */
+    width: 37px;
+    height: 37px;
+    border: 0px;
+    transition: all ease-in-out 300ms;
+    background-image: url("images/mobile_menu_flower.svg");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
+    background-color: transparent;
 }
 
+.mobile-menu-button.mobile-menu-active {
+    background-image: url("images/mobile_menu_flower_empty.svg");
+}
 
 
 .mobile-menu-wrapper {

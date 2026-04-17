@@ -1,5 +1,3 @@
-
-
 const headerScript = () => {    
     document.addEventListener('DOMContentLoaded', () => {
         const body = document.querySelector('body');
@@ -10,7 +8,7 @@ const headerScript = () => {
         const handleClick = (e) => {
             e.stopPropagation();
             const target = e.target;
-            const classes = target.classList;
+            const classes = target.classList;            
             if(classes.contains(mobileMenuClass)) {
                 if(classes.contains(mobileMenuActiveClass)) {
                     mobMenuBtn.classList.remove(mobileMenuActiveClass);

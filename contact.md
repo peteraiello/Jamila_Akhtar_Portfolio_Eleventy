@@ -22,25 +22,22 @@ hero:
     theme: "contact"
     backgroundColour: "secondary"
 form: 
-    title: "Ready to <span>amp up</span> your <span>whimsy?</span>"
+    title: "Ready to <span>amp up</span> your <span>whimsy?</span><br />Then <span>till her up</span> so the <span>work</span> can <span>begin!</span>"
     backgroundColour: "tertiary"
     theme: "contact"
 featuredProjects: 
-    title: "Check Out My Projects"
+    title: "Check out the <span>cool stuff</span>"
     projects: ["Those Darjeeling Days", "MyEirene Ltd", "Sandancer EP"]
     backgroundColour: "white"
-    cardTheme: "secondary"
+    cardTheme: "project-card"
 footer: 
     footerLogo: 
         src: "/images/Footer_logo.svg"
         altText: "Footer Logo"
     copyright: ""
     footerLinks: [
-        {label: "FAQs", link: "/faqs", target: "_self"},        {label: "Privacy Policy", link: "https://www.iubenda.com/privacy-policy/49373695", target: "_blank"},
+        {label: "FAQs", link: "/faqs", target: "_self"},        
+        {label: "Privacy Policy", link: "https://www.iubenda.com/privacy-policy/49373695", target: "_blank"},
         {label: "Cookie Policy", link: "https://www.iubenda.com/privacy-policy/49373695/cookie-policy", target: "_blank"}
     ]
-   
 ---
-
-
-

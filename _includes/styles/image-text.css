@@ -2,6 +2,13 @@ section.image-text.bg-secondary {
     background-color: var(--secondary-color);
 }
 
+section.image-text.theme-about.right-to-left .image-text-text-column {
+    grid-column: span 12;
+    @media (width >= 48rem) { 
+        grid-column: span 7;
+    }
+}
+
 section.image-text.bg-white .image-text-text-column {
     color: var(--dark);
 }
@@ -25,6 +32,11 @@ section.image-text .image-text-section__wrapper {
 section.image-text .image-text-section__wrapper > .button-wrapper {
     display: flex;
     justify-content: center;
+}
+
+section.image-text .image-text-section__wrapper .buttons-wrapper {
+    display: flex;
+    flex-direction: row;
 }
 
 section.image-text.left-to-right .image-text-column {

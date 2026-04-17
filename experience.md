@@ -139,10 +139,10 @@ resume:
         }
     ]
 featuredProjects: 
-    title: "<span>Check out the </span>Cool Stuff"
+    title: "Check out the <span>cool stuff</span>"
     projects: ["Those Darjeeling Days", "MyEirene Ltd", "Sandancer EP"]
     backgroundColour: "black"
-    cardTheme: "secondary"
+    cardTheme: "project-card"
     buttonTheme: "secondary"
 footer: 
     footerLogo: 
@@ -153,7 +153,6 @@ footer:
         {label: "FAQs", link: "/faqs", target: "_self"},        {label: "Privacy Policy", link: "https://www.iubenda.com/privacy-policy/49373695", target: "_blank"},
         {label: "Cookie Policy", link: "https://www.iubenda.com/privacy-policy/49373695/cookie-policy", target: "_blank"}
     ]
-   
 ---
 
 

@@ -21,7 +21,22 @@ section.featured-projects .featured-projects__wrapper {
     gap: 1.25rem;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
     @media (width >= 48rem) { 
         flex-direction: row;
     }
 }
+
+section.featured-projects.bg-white h3.featured-projects__title {
+    color: var(--tertiary-offset);
+}
+
+section.featured-projects.bg-black h3.featured-projects__title {
+    color: var(--tertiary-color);
+}
+
+/*
+section.featured-projects .featured-projects__wrapper {
+
+}
+*/
