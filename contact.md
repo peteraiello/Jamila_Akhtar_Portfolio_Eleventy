@@ -17,7 +17,7 @@ hero:
     title: "Contact"
     strapline: "If you have a project in mind or simply have a query, fill out the form below to get in touch!"
     image: 
-        src: "/images/hero/creative_battery.svg"
+        src: "/images/hero/battery-mint.svg"
         altText: "Illustration of a cat next to a vase"
     theme: "contact"
     backgroundColour: "secondary"

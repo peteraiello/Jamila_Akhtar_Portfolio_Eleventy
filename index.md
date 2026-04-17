@@ -15,7 +15,7 @@ header:
     ]
 hero: 
     title: "Design for the"
-    typewriter: ["whimsical", "feisty", "playful", "edgy"]
+    typewriter: ["whimsical", "edgy", "playful"]
     backgroundImage: 
         src: "/images/hero/creative-juice.svg"
     backgroundColour: "white"

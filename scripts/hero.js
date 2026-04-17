@@ -3,12 +3,11 @@ document.addEventListener("DOMContentLoaded", () => {
   
   if (!subtitles.length) return;
 
-  const colours = ["primary", "secondary", "tertiary-offset"];
+  const colours = ["tertiary", "secondary", "primary"];
   let current = 0;
   let charIndex = 0;
   let isDeleting = false;
   const el = document.querySelector(".typewriter-effect");
-
 
   function applyColour() {
     el.className = "heading-xl text-" + colours[current % colours.length];
