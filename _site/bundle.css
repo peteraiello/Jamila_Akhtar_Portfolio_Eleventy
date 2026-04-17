@@ -1778,11 +1778,6 @@ article.quick-link .button-wrapper {
 }
 
 
-section.resume h3.resume-title {
-    text-align: center;
-    color: var(--tertiary-offset);
-}
-
 section.resume .filters-section-wrapper {
     display: flex;
     flex-direction: column;
