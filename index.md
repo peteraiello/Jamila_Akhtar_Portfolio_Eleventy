@@ -52,7 +52,7 @@ quickLinks:
         theme: "quick-link",
         blurb: "<p>Check out all the cool paraphernalia I've constructed.</p>",
         image: {
-            src: "images/drink-up.svg",
+            src: "images/portfolio.svg",
             altText: "drink up"
         },
         button: 
@@ -68,7 +68,7 @@ quickLinks:
         theme: "quick-link",
         blurb: "<p>The cultivation of my professional garden, AKA my career history.</p>",
         image: {
-            src: "images/watering-plant.svg",
+            src: "images/experience.svg",
             altText: "Watering plant"
         },
         button: 
