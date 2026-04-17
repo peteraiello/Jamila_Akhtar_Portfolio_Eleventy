@@ -159,11 +159,11 @@ imageTexts:
         }
         ]
 featuredProjects: 
-    title: "Check out the <span>Cool Stuff</span>"
+    title: "Check out the <span>cool stuff</span>"
     titleColour: "tertiary-offset"
     projects: ["Those Darjeeling Days", "MyEirene Ltd", "Sandancer EP"]
     backgroundColour: "white"
-    cardTheme: "secondary"
+    cardTheme: "project-card"
     buttonTheme: "primary"
 footer: 
     footerLogo: 
