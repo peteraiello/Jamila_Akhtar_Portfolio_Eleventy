@@ -72,7 +72,6 @@ header.main-header {
     width: 37px;
     height: 37px;
     border: 0px;
-    transition: all ease-in-out 300ms;
     background-image: url("images/mobile_menu_flower.svg");
     background-size: cover;
     background-repeat: no-repeat;
